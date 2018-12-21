@@ -746,7 +746,7 @@ public class MainController {
      */
     public void __initData__() {
 
-        // 通过主界面不为空，设置主界面为我的音乐
+        // 如果主界面不为空，设置主界面为我的音乐
         if (mainBorder.getCenter() != null) {
             // 设置主界面的中央为空
             mainBorder.setCenter(null);

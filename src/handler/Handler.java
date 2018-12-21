@@ -463,7 +463,7 @@ public class Handler {
 
         // 文件解析工具
         JsonParser parser = new JsonParser();
-        JsonArray array = parser.parse(new FileReader("C:\\Users\\hasee\\Documents\\JavaCode\\LearnJavaFx\\" + keyword + ".json")).getAsJsonArray();
+        JsonArray array = parser.parse(new FileReader("C:\\Users\\hasee\\Documents\\JavaCode\\JavaFxMusicPlayer\\" + keyword + ".json")).getAsJsonArray();
 
         // 分析数据后填充到链表中
         for (int i = 0; i < array.size(); i++) {

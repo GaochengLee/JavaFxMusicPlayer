@@ -192,9 +192,12 @@ public class PlayListController implements Controller {
      */
     @FXML
     private void Action_clearAll(ActionEvent e) {
+        // 删除播放状态里的所有音乐
         playState.getCurrent_songList().clear();
+        // 删除播放列表中的所有音乐
         TableView_playList.getItems().clear();
 
+        // 将状态初始化
         if (PlayState.getPlayState() != null) {
             File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\LearnJavaFx\\src\\initial.jpg");
             Image image = new Image(file.toURI().toString());

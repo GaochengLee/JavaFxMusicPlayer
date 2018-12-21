@@ -5,7 +5,7 @@
 
 package service;
 
-import GUI.Main;
+import mainGUI.Main;
 import controller.LeftMusicController;
 import controller.MainController;
 import controller.MyMusicPageController;

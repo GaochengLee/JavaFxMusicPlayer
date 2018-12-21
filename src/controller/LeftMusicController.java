@@ -5,8 +5,8 @@
 
 package controller;
 
-import GUI.Main;
-import GUI.PercussionGUI;
+import mainGUI.Main;
+import mainGUI.PercussionGUI;
 import handler.Handler;
 import javafx.application.Platform;
 import javafx.fxml.FXML;

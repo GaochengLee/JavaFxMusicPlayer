@@ -1,4 +1,4 @@
-package GUI;
+package mainGUI;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;

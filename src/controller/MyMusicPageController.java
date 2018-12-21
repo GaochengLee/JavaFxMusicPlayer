@@ -5,7 +5,7 @@
 
 package controller;
 
-import GUI.Main;
+import mainGUI.Main;
 import entity.Music;
 import handler.ClickAction;
 import handler.Handler;

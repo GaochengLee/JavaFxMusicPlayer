@@ -5,7 +5,7 @@
 
 package service;
 
-import GUI.Main;
+import mainGUI.Main;
 import entity.Music;
 import javafx.scene.image.Image;
 

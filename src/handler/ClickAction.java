@@ -1,7 +1,7 @@
 package handler;
 
 
-import GUI.Main;
+import mainGUI.Main;
 import controller.Controller;
 import controller.MainController;
 import entity.Music;

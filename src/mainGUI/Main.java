@@ -3,23 +3,19 @@
  * @author 李高丞
  */
 
-package GUI;
+package mainGUI;
 
 import controller.*;
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.ImageCursor;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-
-import java.io.File;
 
 /**
  * Main 类
@@ -189,10 +185,10 @@ public class Main extends Application {
         Scene scene = new Scene(mainPane, 1280, 720);
 
         // 更换鼠标图标
-        File file = new File("timg.gif");
-        Image image = new Image(file.toURI().toString());
-        ImageCursor cursor = new ImageCursor(image, 20, 20);
-        scene.setCursor(cursor);
+//        File file = new File("timg.gif");
+//        Image image = new Image(file.toURI().toString());
+//        ImageCursor cursor = new ImageCursor(image, 20, 20);
+//        scene.setCursor(cursor);
 
         // 加载样式层叠表
         // todo：样式层叠表没有写好

@@ -5,7 +5,7 @@
 
 package handler;
 
-import GUI.Main;
+import mainGUI.Main;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

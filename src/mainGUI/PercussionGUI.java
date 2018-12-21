@@ -3,23 +3,20 @@
  * @author 李高丞
  */
 
-package GUI;
+package mainGUI;
 
 import javafx.application.Application;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.ImageCursor;
 import javafx.scene.Scene;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 import javax.sound.midi.*;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -76,7 +73,7 @@ public class PercussionGUI extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
-        // 从 fxml 文件中加载 gui
+        // 从 fxml 文件中加载 mainGUI
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Percussion.fxml"));
         // 获得主面板
         BorderPane borderPane = loader.load();

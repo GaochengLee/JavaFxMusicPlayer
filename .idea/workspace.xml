@@ -3,7 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="e0050917-3fbe-4552-8810-685cff911af7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/FXMediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/FXMediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/Percussion.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/Percussion.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/PercussionGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/PercussionGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/leftMusicList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/leftMusicList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/myMusicPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/myMusicPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/playList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/playList.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/searchPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/searchPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LeftMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeftMusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MyMusicPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MyMusicPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/PlayListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/PlayListController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SearchPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SearchPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/ClickAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/ClickAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/MusicMediaPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MusicMediaPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/PlayState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/PlayState.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,13 +41,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="29" />
+          <entry key="java" value="31" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="29" />
+          <entry key="JAVA" value="31" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
@@ -49,7 +66,20 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mainGUI/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="193" column="25" lean-forward="true" selection-start-line="193" selection-start-column="25" selection-end-line="193" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -63,7 +93,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/handler/ClickAction.java" />
-        <option value="$PROJECT_DIR$/src/GUI/Main.java" />
         <option value="$PROJECT_DIR$/src/service/PlayState.java" />
         <option value="$PROJECT_DIR$/src/service/MusicMediaPlayer.java" />
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
@@ -73,6 +102,9 @@
         <option value="$PROJECT_DIR$/src/tool/ExcelTool.java" />
         <option value="$PROJECT_DIR$/src/tool/GetMusicInfo.java" />
         <option value="$PROJECT_DIR$/src/handler/Handler.java" />
+        <option value="$PROJECT_DIR$/src/GUI/Main.java" />
+        <option value="$PROJECT_DIR$/src/gui/Main.java" />
+        <option value="$PROJECT_DIR$/src/controller/LeftMusicController.java" />
       </list>
     </option>
   </component>
@@ -107,18 +139,6 @@
               <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -128,7 +148,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545397327268" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545398696224" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/dom4j-1.6.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -151,11 +171,11 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="GUI.Main" />
+      <option name="MAIN_CLASS_NAME" value="mainGUI.Main" />
       <module name="JavaFxMusicPlayer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="GUI.*" />
+          <option name="PATTERN" value="mainGUI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,7 +218,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545368129089</updated>
       <workItem from="1545368132871" duration="478000" />
-      <workItem from="1545388658696" duration="8429000" />
+      <workItem from="1545388658696" duration="9606000" />
     </task>
     <task id="LOCAL-00001" summary="改变路径">
       <created>1545368422973</created>
@@ -228,11 +248,18 @@
       <option name="project" value="LOCAL" />
       <updated>1545397334203</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="添加了一些注释，删除了一些没用的元素。">
+      <created>1545398120557</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545398120557</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8907000" />
+    <option name="totallyTimeSpent" value="10084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -407,13 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/LeftMusicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" selection-start-line="28" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -435,7 +455,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/PercussionGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/mainGUI/PercussionGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-465">
           <caret line="113" column="21" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="21" />
@@ -448,43 +468,6 @@
             <element signature="e#5464#5465#0" expanded="true" />
             <element signature="e#5542#5543#0" expanded="true" />
             <element signature="e#5574#5575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GUI/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2544">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#6360#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#5254#5255#0" expanded="true" />
-            <element signature="e#5282#5283#0" expanded="true" />
-            <element signature="e#5445#5446#0" expanded="true" />
-            <element signature="e#5477#5478#0" expanded="true" />
-            <element signature="e#5574#5575#0" expanded="true" />
-            <element signature="e#5605#5606#0" expanded="true" />
-            <element signature="e#5705#5706#0" expanded="true" />
-            <element signature="e#5741#5742#0" expanded="true" />
-            <element signature="e#5838#5839#0" expanded="true" />
-            <element signature="e#5872#5873#0" expanded="true" />
-            <element signature="e#5967#5968#0" expanded="true" />
-            <element signature="e#5998#5999#0" expanded="true" />
-            <element signature="e#6095#6096#0" expanded="true" />
-            <element signature="e#6128#6129#0" expanded="true" />
-            <element signature="e#6215#6216#0" expanded="true" />
-            <element signature="e#6245#6246#0" expanded="true" />
-            <element signature="e#6350#6351#0" expanded="true" />
-            <element signature="e#6387#6388#0" expanded="true" />
-            <element signature="e#6512#6513#0" expanded="true" />
-            <element signature="e#6556#6557#0" expanded="true" />
-            <element signature="e#6675#6676#0" expanded="true" />
-            <element signature="e#6716#6717#0" expanded="true" />
-            <element signature="e#6833#6834#0" expanded="true" />
-            <element signature="e#6875#6876#0" expanded="true" />
-            <element signature="e#6313#6314#0" expanded="true" />
-            <element signature="e#6356#6357#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -562,6 +545,23 @@
             <element signature="e#19448#19449#0" expanded="true" />
             <element signature="e#19540#19541#0" expanded="true" />
             <element signature="e#19570#19571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LeftMusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mainGUI/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="193" column="25" lean-forward="true" selection-start-line="193" selection-start-column="25" selection-end-line="193" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

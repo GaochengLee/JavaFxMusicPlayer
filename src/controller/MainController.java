@@ -5,7 +5,7 @@
 
 package controller;
 
-import GUI.Main;
+import mainGUI.Main;
 import handler.Handler;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;

@@ -5,18 +5,15 @@
 
 package controller;
 
-import GUI.Main;
+import mainGUI.Main;
 import entity.Music;
 import handler.ClickAction;
 import handler.Handler;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 import service.MusicMediaPlayer;

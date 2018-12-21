@@ -189,7 +189,7 @@ public class Main extends Application {
         Scene scene = new Scene(mainPane, 1280, 720);
 
         // 更换鼠标图标
-        File file = new File("mouse.png");
+        File file = new File("timg.gif");
         Image image = new Image(file.toURI().toString());
         ImageCursor cursor = new ImageCursor(image, 20, 20);
         scene.setCursor(cursor);
@@ -211,7 +211,7 @@ public class Main extends Application {
     /**
      * main 方法，启动音乐播放器
      *
-     * @param args
+     * @param args 命令行参数
      */
     public static void main(String[] args) {
         launch(args);
@@ -222,50 +222,110 @@ public class Main extends Application {
      * 用于修改和获得主要界面的控制器和场景面板
      */
 
+    /**
+     * 获得主舞台
+     *
+     * @return 返回主舞台
+     */
     public static Stage getMainStage() {
         return mainStage;
     }
 
+    /**
+     * 获得主场景的主面板
+     *
+     * @return 返回主场景的主面板
+     */
     public BorderPane getMainPane() {
         return mainPane;
     }
 
+    /**
+     * 获得左侧控制面板
+     *
+     * @return 返回左侧控制面板
+     */
     public AnchorPane getLeftMusicList() {
         return leftMusicList;
     }
 
+    /**
+     * 获得我的音乐面板
+     *
+     * @return 返回我的音乐面板
+     */
     public StackPane getMyMusicPage() {
         return myMusicPage;
     }
 
+    /**
+     * 获得播放列表面板
+     *
+     * @return 返回播放列表面板
+     */
     public AnchorPane getPlayList() {
         return playList;
     }
 
+    /**
+     * 获得搜索界面面板
+     *
+     * @return 返回搜索界面面板
+     */
     public AnchorPane getSearchPage() {
         return searchPage;
     }
 
+    /**
+     * 获得主类
+     *
+     * @return 返回主类
+     */
     public static Main getMainGUI() {
         return mainGUI;
     }
 
+    /**
+     * 获得主面板控制器
+     *
+     * @return 返回主面板控制器
+     */
     public MainController getMainController() {
         return mainController;
     }
 
+    /**
+     * 获得我的音乐面板控制器
+     *
+     * @return 返回我的音乐面板控制器
+     */
     public MyMusicPageController getMyMusicPageController() {
         return myMusicPageController;
     }
 
+    /**
+     * 获得播放列表面板控制器
+     *
+     * @return 返回播放列表面板控制器
+     */
     public PlayListController getPlayListController() {
         return playListController;
     }
 
+    /**
+     * 获得左侧面板控制器
+     *
+     * @return 返回左侧面板控制器
+     */
     public LeftMusicController getLeftMusicController() {
         return leftMusicController;
     }
 
+    /**
+     * 获得搜索界面面板控制器
+     *
+     * @return 返回搜索界面面板控制器
+     */
     public SearchPageController getSearchPageController() {
         return searchPageController;
     }

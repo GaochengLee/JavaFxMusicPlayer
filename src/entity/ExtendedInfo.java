@@ -8,6 +8,8 @@ package entity;
 import java.text.DecimalFormat;
 
 /**
+ * 扩展信息类
+ * 进一步详细地解析了音乐文件内部的信息
  * @author 李高丞
  * @version 1.0 Beta
  */

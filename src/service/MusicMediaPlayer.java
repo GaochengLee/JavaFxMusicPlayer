@@ -37,76 +37,69 @@ import java.util.List;
  * @version 1.0 Beta
  */
 public class MusicMediaPlayer {
-
     /**
      * 一首歌的总时长
      */
     private double endTime;
-
     /**
      * 当前的播放时长
      */
     private double currentTime;
-
     /**
      * javafx 中的媒体类声明此类后，可以通过 MediaPlayer 来控制媒体的播放
      */
     private static Media media;
-
     /**
      * javafx 中的媒体控制类，控制媒体的播放状态
      */
     private static MediaPlayer mediaPlayer;
-
     /**
      * 当前播放器的播放状态
      */
     private static PlayState playState = PlayState.getPlayState();
-
     /**
      * 获取 Main 类
      */
     private Main mainGUI = Main.getMainGUI();
-
+    /**
+     * 获取控制类
+     */
     private Handler handler = new Handler(mainGUI);
-
     /**
      * 获取 Main 类的控制器
      */
     private MainController mainController = mainGUI.getMainController();
-
     /**
      * 获取左侧列表的控制器
      */
     private LeftMusicController leftMusicController = mainGUI.getLeftMusicController();
-
     /**
      * 获取我的音乐界面的控制器
      */
     private MyMusicPageController musicPageController = mainGUI.getMyMusicPageController();
-
+    /**
+     * 获取播放列表控制器
+     */
     private PlayListController playListController = mainGUI.getPlayListController();
-
     /**
      * 获取 Main 类的播放进度滑动条
      */
     private Slider songSlider = mainController.getSlider_songSlider();
-
     /**
      * 获取 Main 类的声音滑动条
      */
     private Slider volumeSlider = mainController.getSlider_volume();
-
     /**
      * 获取 Main 类的播放进度条
      */
     private ProgressBar songProgress = mainController.getProgressBar_songProcess();
-
     /**
      * 获取我的音乐界面中的音乐列表
      */
     private TableView<Music> musicList = musicPageController.getTableView_songList();
-
+    /**
+     * 默认构造器
+     */
     public MusicMediaPlayer() {
 
     }
@@ -176,7 +169,7 @@ public class MusicMediaPlayer {
 
         // 开始播放
         mediaPlayer.play();
-
+        // 设置按钮状态
         mainController.getButton_pause().getStyleClass().set(0, "buttonPause");
         mainController.getButton_last().setDisable(false);
         mainController.getButton_next().setDisable(false);
@@ -315,24 +308,28 @@ public class MusicMediaPlayer {
 
     }
 
+    /**
+     * 停止播放（单击清除所有歌曲按钮后调用的事件）
+     */
     public void stop() {
+        // 清空播放状态和播放列表里的所有歌曲
         playState.getCurrent_songList().clear();
         playListController.getTableView_songList().getItems().clear();
-
+        // 当前音乐停止
         mediaPlayer.stop();
 
         // 设置播放位置到当前歌曲的开头位置
         mediaPlayer.seek(Duration.ZERO);
-
+        // 当前状态初始化
         mainController.getLabel_currentTime().setText("--:--");
         mainController.getLabel_totalTime().setText("--:--");
         mainController.getButton_pause().setDisable(true);
         mainController.getButton_last().setDisable(true);
         mainController.getButton_next().setDisable(true);
 
-        leftMusicController.getLabel_songName().setText("-----");
-        leftMusicController.getLabel_singer().setText("-----");
-
+        leftMusicController.getLabel_songName().setText("---");
+        leftMusicController.getLabel_singer().setText("---");
+        // 刷新状态栏和播放列表标签
         Handler.refreshStatusBar(new ExtendedInfo());
         Handler.messageProperty().setValue("0");
 
@@ -352,7 +349,7 @@ public class MusicMediaPlayer {
 
         // 播放器音乐实体类
         Music music;
-
+        // 获取扩展信息
         ExtendedInfo info;
 
         // 如果当前播放歌曲是列表中的最后一个
@@ -360,7 +357,7 @@ public class MusicMediaPlayer {
 
             // 获取列表中的第一个歌曲
             music = list.get(0);
-
+            // 获得扩展信息
             info = GetMusicInfo.getExtendedInfo(music.getPath());
 
             // 开始播放
@@ -370,7 +367,7 @@ public class MusicMediaPlayer {
 
             // 在主界面设置播放信息
             setMusicInfo(music);
-
+            // 刷新状态栏
             Handler.refreshStatusBar(info);
 
         } else {
@@ -378,7 +375,7 @@ public class MusicMediaPlayer {
 
             // 获取下一首歌曲
             music = list.get(index);
-
+            // 获得扩展信息
             info = GetMusicInfo.getExtendedInfo(music.getPath());
 
             // 开始播放
@@ -388,7 +385,7 @@ public class MusicMediaPlayer {
 
             // 设置主界面播放信息
             setMusicInfo(music);
-
+            // 刷新状态栏
             Handler.refreshStatusBar(info);
         }
     }
@@ -440,7 +437,7 @@ public class MusicMediaPlayer {
 
         // 获取在该位置的歌曲
         music = playState.getCurrent_songList().get(random);
-
+        // 获得扩展信息
         ExtendedInfo info = GetMusicInfo.getExtendedInfo(music.getPath());
 
         // 开始播放歌曲
@@ -448,7 +445,7 @@ public class MusicMediaPlayer {
         // 设置播放位置
         playState.setCurrentIndex(random);
         musicMediaPlayer.start();
-
+        // 刷新状态栏
         Handler.refreshStatusBar(info);
     }
 

@@ -115,7 +115,7 @@ public class PlayState {
         if (playState == null) {
             System.out.println("new PlayState create");
             playState = new PlayState();
-
+            // 初始化状态
             playState.currentState = PAUSE;
             playState.currentMode = LOOPPLAY;
             playState.currentVolume = UNMUTE;
@@ -130,58 +130,124 @@ public class PlayState {
      * 用来获得或修改当前的播放状态
      */
 
+    /**
+     * 获得当前音量状态
+     *
+     * @return 返回当前音量状态
+     */
     public int getCurrentVolume() {
         return currentVolume;
     }
 
+    /**
+     * 获得当前播放/暂停状态
+     *
+     * @return 返回当前播放/暂停状态
+     */
     public int getCurrentState() {
         return playState.currentState;
     }
 
+    /**
+     * 获得当前播放的音乐的图片
+     *
+     * @return 返回当前播放的音乐的图片
+     */
     public Image getCurrentImage() {
         return currentImage;
     }
 
+    /**
+     * 获得当前播放的音乐
+     *
+     * @return 返回当前播放的音乐
+     */
     public Music getCurrentMusic() {
         return currentMusic;
     }
 
+    /**
+     * 获得当前播放的模式
+     *
+     * @return 返回当前播放的模式
+     */
     public int getCurrentMode() {
         return currentMode;
     }
 
+    /**
+     * 获得当前播放的位置
+     *
+     * @return 返回当前播放的位置
+     */
     public int getCurrentIndex() {
         return currentIndex;
     }
 
+    /**
+     * 获得当前播放的音乐列表
+     *
+     * @return 返回当前播放的音乐列表
+     */
     public LinkedList<Music> getCurrent_songList() {
         return current_songList;
     }
 
+    /**
+     * 设置当前播放状态为 暂停播放
+     */
     public void setState_PAUSE() {
         playState.currentState = PAUSE;
     }
 
+    /**
+     * 设置当前播放状态为 开始播放
+     */
     public void setState_PLAY() {
         playState.currentState = PLAY;
     }
 
+    /**
+     * 设置当前音量
+     *
+     * @param currentVolume 改变的音量
+     */
     public void setCurrentVolume(int currentVolume) {
         this.currentVolume = currentVolume;
     }
 
+    /**
+     * 设置当前图片
+     *
+     * @param currentImage 要改变的图片
+     */
     public void setCurrentImage(Image currentImage) {
         this.currentImage = currentImage;
     }
 
+    /**
+     * 设置当前音乐播放模式
+     *
+     * @param currentMode 改变当前音乐播放模式
+     */
     public void setCurrentMode(int currentMode) {
         this.currentMode = currentMode;
     }
 
+    /**
+     * 设置当前播放位置
+     *
+     * @param currentIndex 改变当前播放位置
+     */
     public void setCurrentIndex(int currentIndex) {
         this.currentIndex = currentIndex;
     }
 
+    /**
+     * 设置当前播放音乐
+     *
+     * @param currentMusic 改变当前播放音乐
+     */
     public void setCurrentMusic(Music currentMusic) {
         this.currentMusic = currentMusic;
     }

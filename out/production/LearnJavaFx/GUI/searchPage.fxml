@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Anchor_searchMain" prefHeight="600.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchPageController">
+   <children>
+      <VBox fx:id="VBox_searchMain" prefHeight="600.0" prefWidth="1050.0">
+         <children>
+            <HBox fx:id="HBox_topPane" prefHeight="120.0" prefWidth="1050.0">
+               <children>
+                  <Label fx:id="Label_searchSong" prefHeight="40.0" prefWidth="250.0" text="搜索到的歌曲">
+                     <HBox.margin>
+                        <Insets left="20.0" top="45.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TableView fx:id="TableView_searchList" prefHeight="480.0" prefWidth="1050.0">
+              <columns>
+                <TableColumn fx:id="TableColumn_searchSongName" prefWidth="254.0" text="歌曲" />
+                <TableColumn fx:id="TableColumn_searchSinger" prefWidth="255.0" text="歌手" />
+                  <TableColumn fx:id="TableColumn_searchAlbum" prefWidth="320.0" text="专辑" />
+                  <TableColumn fx:id="TableColumn_searchTime" prefWidth="220.0" text="时长" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

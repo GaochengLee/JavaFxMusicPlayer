@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="mainBorder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="750.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <top>
+      <AnchorPane fx:id="Anchor_top" prefHeight="50.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="HBox_top" prefHeight="50.0" prefWidth="1280.0">
+               <children>
+                  <Label fx:id="Label_page" prefHeight="50.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="TextField_searchSong" prefHeight="25.0" prefWidth="200.0" promptText="搜索音乐、歌手、专辑">
+                     <HBox.margin>
+                        <Insets left="150.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="Button_search" mnemonicParsing="false" onAction="#Action_searchButton" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Button_miniSize" mnemonicParsing="false" onAction="#Action_miniSize" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="510.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Button_changeColor" mnemonicParsing="false" onAction="#Action_changeColor" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="Button_exit" mnemonicParsing="false" onAction="#Action_exit" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <AnchorPane fx:id="Anchor_bottom" minHeight="70.0" prefHeight="100.0" prefWidth="1280.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="HBox_bottom" layoutY="2.0" maxHeight="100.0" minHeight="70.0" prefHeight="75.0" prefWidth="1280.0" spacing="20.0" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button fx:id="Button_last" mnemonicParsing="false" onAction="#Action_preMusic" prefHeight="50.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="5.0" top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="Button_pause" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="Button_next" mnemonicParsing="false" onAction="#Action_nextMusic" prefHeight="50.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <Label fx:id="Label_currentTime" maxWidth="105.0" prefHeight="50.0" prefWidth="70.0" text="currentTime">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding></Label>
+                  <StackPane maxHeight="50.0" prefHeight="50.0" prefWidth="511.0">
+                     <children>
+                        <ProgressBar fx:id="ProgressBar_songProcess" minHeight="15.0" prefHeight="12.0" prefWidth="500.0" progress="0.0">
+                           <StackPane.margin>
+                              <Insets top="10.0" />
+                           </StackPane.margin></ProgressBar>
+                        <Slider fx:id="Slider_songSlider" maxHeight="50.0" maxWidth="500.0" minHeight="50.0" minWidth="500.0" prefHeight="50.0" prefWidth="500.0">
+                           <StackPane.margin>
+                              <Insets top="10.0" />
+                           </StackPane.margin></Slider>
+                     </children>
+                  </StackPane>
+                  <Label fx:id="Label_totalTime" maxWidth="105.0" prefHeight="50.0" prefWidth="70.0" text="TotalTime">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <HBox prefHeight="55.0" prefWidth="160.0">
+                     <children>
+                        <Button fx:id="Button_mute" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="25.0">
+                           <HBox.margin>
+                              <Insets top="25.0" />
+                           </HBox.margin>
+                        </Button>
+                        <StackPane fx:id="StackPane_volume" maxHeight="55.0" maxWidth="150.0" minWidth="150.0" prefHeight="55.0" prefWidth="150.0">
+                           <children>
+                              <ProgressBar fx:id="ProgressBar_volume" maxHeight="15.0" maxWidth="150.0" minHeight="15.0" minWidth="150.0" prefHeight="15.0" prefWidth="150.0" progress="0.0">
+                                 <StackPane.margin>
+                                    <Insets top="10.0" />
+                                 </StackPane.margin></ProgressBar>
+                              <Slider fx:id="Slider_volume" maxWidth="150.0" minWidth="150.0" prefHeight="50.0" prefWidth="150.0">
+                                 <StackPane.margin>
+                                    <Insets top="10.0" />
+                                 </StackPane.margin></Slider>
+                           </children>
+                           <HBox.margin>
+                              <Insets top="6.0" />
+                           </HBox.margin>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <Button fx:id="Button_modeSwitch" mnemonicParsing="false" onAction="#Action_modeSwitch" prefHeight="50.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin></Button>
+                  <HBox prefHeight="67.0" prefWidth="150.0">
+                     <children>
+                        <Button fx:id="Button_playList" mnemonicParsing="false" onAction="#Action_playList" prefHeight="50.0" prefWidth="50.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></Button>
+                        <Label fx:id="Label_playList" prefHeight="50.0" prefWidth="50.0" text="PlayList">
+                           <HBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox layoutY="74.0" prefHeight="25.0" prefWidth="1280.0">
+               <children>
+                  <Label minWidth="50.0" prefHeight="25.0" prefWidth="50.0" text="比特率：">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Label>
+                  <Label fx:id="Label_BitRate" minWidth="60.0" prefHeight="25.0" prefWidth="60.0" text="Label" />
+                  <Label minWidth="50.0" prefHeight="25.0" prefWidth="50.0" text="采样率：">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Label_SampleRate" minWidth="60.0" prefHeight="25.0" prefWidth="60.0" text="Label" />
+                  <Label minWidth="65.0" prefHeight="25.0" prefWidth="65.0" text="文件格式：">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Label_encodingType" minWidth="60.0" prefHeight="25.0" prefWidth="60.0" text="Label" />
+                  <Label minWidth="65.0" prefHeight="25.0" prefWidth="65.0" text="压缩格式：">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Label_format" minWidth="120.0" prefHeight="25.0" prefWidth="120.0" text="Label" />
+                  <Label minWidth="40.0" prefHeight="25.0" prefWidth="40.0" text="大小：">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Label_size" minWidth="80.0" prefHeight="25.0" prefWidth="80.0" text="Label" />
+                  <Label minWidth="40.0" prefHeight="25.0" prefWidth="40.0" text="流派：">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Label_genre" minWidth="70.0" prefHeight="25.0" prefWidth="70.0" text="Label" />
+                  <Label minWidth="40.0" prefHeight="25.0" prefWidth="40.0" text="版权：">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Label_copyright" prefHeight="25.0" prefWidth="250.0" text="Label" />
+                  <Label prefHeight="25.0" prefWidth="40.0" text="声道：">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="Label_channels" prefHeight="25.0" prefWidth="60.0" text="Label" />
+               </children></HBox>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

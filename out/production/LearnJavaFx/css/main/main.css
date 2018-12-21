@@ -1,0 +1,194 @@
+#HBox_bottom {
+    -fx-background-color: #cccccc;
+    -fx-border-width: 2 2 2 2;
+    -fx-border-color: #bfbfbf;
+}
+
+#HBox_top {
+    -fx-background-color: #9f1912;
+    -fx-border-color: linear-gradient(#800000 0%, red 100%);
+    -fx-border-width: 0 0 3 0;
+}
+
+#Label_page {
+    -fx-background-image: url("123.png");
+    -fx-background-size: 50px;
+}
+
+#Label_page:hover {
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 5, 0.5, 0, 0);
+}
+
+.buttonSearch {
+    -fx-background-image: url("search.png");
+    -fx-background-size: 30px;
+}
+
+.buttonSearch:hover {
+    -fx-background-image: url("searchdark.png");
+    -fx-background-size: 30px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonMiniSize {
+    -fx-background-image: url("miniSize.png");
+    -fx-background-size: 30px;
+}
+
+.buttonMiniSize:hover {
+    -fx-background-image: url("miniSizeDark.png");
+    -fx-background-size: 30px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonChangeColor {
+    -fx-background-image: url("changeColor.png");
+    -fx-background-size: 30px;
+}
+
+.buttonChangeColor:hover {
+    -fx-background-image: url("changeColorDark.png");
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonExit {
+    -fx-background-image: url("exit.png");
+    -fx-background-size: 30px;
+}
+
+.buttonExit:hover {
+    -fx-background-image: url("exitdark.png");
+    -fx-background-size: 30px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonPre {
+    -fx-background-image: url("pre.png");
+    -fx-background-size: 50px;
+}
+
+.buttonPre:hover {
+    -fx-background-image: url("predark.png");
+    -fx-background-size: 50px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonPlay {
+    -fx-background-image: url("play.png");
+    -fx-background-size: 50px;
+}
+
+.buttonPlay:hover {
+    -fx-background-image: url("playdark.png");
+    -fx-background-size: 50px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonPause {
+    -fx-background-image: url("pause.png");
+    -fx-background-size: 50px;
+}
+
+.buttonPause:hover {
+    -fx-background-image: url("pausedark.png");
+    -fx-background-size: 50px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonNext {
+    -fx-background-image: url("next.png");
+    -fx-background-size: 50px;
+}
+
+.buttonNext:hover {
+    -fx-background-image: url("nextdark.png");
+    -fx-background-size: 50px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonMute {
+    -fx-background-image: url("cancelmute.png");
+    -fx-background-size: 25px;
+}
+
+.buttonMute:hover {
+    -fx-background-image: url("cancelmutedark.png");
+    -fx-background-size: 25px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.buttonCancelMute {
+    -fx-background-image: url("mute.png");
+    -fx-background-size: 25px;
+}
+
+.buttonCancelMute:hover {
+    -fx-background-image: url("mutedark.png");
+    -fx-background-size: 25px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.modeLoopPlay {
+    -fx-background-image: url("loopplay.png");
+    -fx-background-size: 50px;
+}
+
+.modeLoopPlay:hover {
+    -fx-background-image: url("loopplaydark.png");
+    -fx-background-size: 50px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.modeRandomPlay {
+    -fx-background-image: url("randomplay.png");
+    -fx-background-size: 50px;
+}
+
+.modeRandomPlay:hover {
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.modeSingleCycle {
+    -fx-background-image: url("singlecycle.png");
+    -fx-background-size: 50px;
+}
+
+.modeSingleCycle:hover {
+    -fx-background-image: url("singlecycledark.png");
+    -fx-background-size: 50px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.playList {
+    -fx-background-image: url("playList.png");
+    -fx-background-size: 50px;
+}
+
+.playList:hover {
+    -fx-background-image: url("playListdark.png");
+    -fx-background-size: 50px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
+}
+
+.slider .track {
+    -fx-background-color: null; /* Hide the track color*/
+}
+
+.progress-bar > .bar {
+    -fx-pref-height: 15;
+    -fx-min-height: 15;
+    -fx-max-height: 15;
+}
+
+.progress-bar:determinate > .bar {
+    -fx-background-color: #d02711;
+}
+
+.progress-bar:indeterminate > .bar {
+    -fx-background-color: #d02711;
+}
+
+.progress-bar > .track {
+    -fx-border-width: 0 0 0 0;
+    -fx-background-color: white;
+}

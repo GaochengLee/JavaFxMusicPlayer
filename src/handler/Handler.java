@@ -85,23 +85,23 @@ public class Handler {
      *
      */
     public void search() {
-        //
+        // 获得主类控制器
         MainController mainController = mainGUI.getMainController();
-        //
+        // 获得 TextField 里的文本
         String msg = mainController.getTextField_searchSong().getText();
-        //
+        // 设置搜索按钮的事件处理
         mainController.getButton_search().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 if (msg != null) {
-                    //
+                    // 获取网络输出流然后输出搜索信息
                     MainController.getServerOut().println("# search " + msg);
-                    //
+                    // 启动线程来接受文件
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
                             try {
-                                //
+                                // 接受文件
                                 Handler.receiveFile(MainController.getSocket());
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -121,37 +121,44 @@ public class Handler {
     }
 
     /**
-     *
-     * @throws Exception
+     * 导出 Excel 信息
      */
-    public void exportExcel() throws Exception {
-        //
-        Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
-        //
-        ExcelTool.CreateMsg(music);
-        //
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("通知");
-        alert.setHeaderText("^-^");
-        alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".xls");
-        alert.show();
+    public void exportExcel() {
+        try {
+            // 获取被选中的音乐
+            Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
+            // 生成 Excel 文件
+            ExcelTool.CreateMsg(music);
+            // 提示信息
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("通知");
+            alert.setHeaderText("^-^");
+            alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".xls");
+            alert.show();
+        } catch (Exception e) {
+            System.err.println("Error in export Excel");
+        }
+
     }
 
     /**
-     *
-     * @throws Exception
+     * 导出 PDF 信息
      */
-    public void exportPDF() throws Exception {
-        //
-        Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
-        //
-        PDFTool.CreatePDF(music);
-        //
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("通知");
-        alert.setHeaderText("^-^");
-        alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".pdf");
-        alert.show();
+    public void exportPDF() {
+        try {
+            // 获取被选中的音乐
+            Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
+            // 生成 PDF 文件
+            PDFTool.CreatePDF(music);
+            // 提示信息
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("通知");
+            alert.setHeaderText("^-^");
+            alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".pdf");
+            alert.show();
+        } catch (Exception e) {
+            System.err.println("Error in export PDF");
+        }
     }
 
 
@@ -172,7 +179,7 @@ public class Handler {
 
         System.out.println(tableView.getItems());
 
-        //
+        // 获取扩展信息
         ExtendedInfo info = GetMusicInfo.getExtendedInfo(index.getPath());
 
         // 开始播放歌曲
@@ -186,7 +193,7 @@ public class Handler {
         message.set(String.valueOf(mainGUI.getPlayListController().getTableView_songList().getItems().size()));
         mainGUI.getMainController().getLabel_playList().textProperty().bind(message);
 
-        //
+        // 刷新状态栏
         refreshStatusBar(info);
     }
 
@@ -194,14 +201,11 @@ public class Handler {
      * 弹出播放列表和不弹出播放列表
      */
     public void playList() {
-        //
         listOn = !listOn;
         if (listOn) {
-            //
             mainGUI.getMainPane().setCenter(null);
             mainGUI.getMainPane().setCenter(mainGUI.getPlayList());
         } else {
-            //
             mainGUI.getMainPane().setCenter(null);
             mainGUI.getMainPane().setCenter(mainGUI.getMyMusicPage());
         }
@@ -214,12 +218,12 @@ public class Handler {
 
         // 获取当前播放歌曲的位置
         int index = playState.getCurrentIndex();
-        //
+        // 声明音乐
         Music music;
-        //
+        // 声明扩展信息
         ExtendedInfo info;
 
-        //
+        // 如果当前播放状态里的歌曲列表为空则无事发生
         if (playState.getCurrent_songList().size() == 0) return;
 
         // 判断是否是最后一位
@@ -237,34 +241,34 @@ public class Handler {
             refreshStatusBar(info);
         } else {
 
-            // 如果不是最后一位
+            //
             if ((index + 1) >= playState.getCurrent_songList().size()) {
 
-                //
+                // 播放第一位的音乐
                 music = playState.getCurrent_songList().get(0);
-                //
+                // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
-                //
+                // 获取播放器
                 player = new MusicMediaPlayer(music);
-                //
+                // 设置当前播放位置为 0
                 playState.setCurrentIndex(0);
-                //
+                // 开始播放
                 player.start();
-                //
+                // 刷新状态栏
                 refreshStatusBar(info);
             } else {
-                //
+                // 获取下一位置的音乐
                 music = playState.getCurrent_songList().get(index + 1);
-                //
+                // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
-                //
+                // 获取播放器
                 player = new MusicMediaPlayer(music);
-                //
+                // 设置当前播放位置为 index + 1
                 playState.setCurrentIndex(index + 1);
                 player.start();
-                //
+                // 刷新状态栏信息
                 refreshStatusBar(info);
             }
         }
@@ -278,83 +282,82 @@ public class Handler {
 
         // 获取当前播放歌曲的位置
         int index = playState.getCurrentIndex();
-        //
+        // 声明音乐
         Music music;
-        //
+        // 声明扩展信息
         ExtendedInfo info;
 
-        //
+        // 如果播放状态里的歌曲列表为空则无事发生
         if (playState.getCurrent_songList().size() == 0) return;
 
         // 如果播放列表只有一首歌，那么单击就是继续播放这首歌
         if (playState.getCurrent_songList().size() == 1) {
-            //
+            // 获取音乐
             music = playState.getCurrent_songList().get(index);
-            //
+            // 获取扩展信息
             info = GetMusicInfo.getExtendedInfo(music.getPath());
 
             player = new MusicMediaPlayer(music);
             playState.setCurrentIndex(0);
             player.start();
 
-            //
+            // 刷新状态栏信息
             refreshStatusBar(info);
         } else {
             // 如果播放列表不只是一首歌
             if (index == 0) {
                 // 如果是第一首歌，单击上一首还是播放这首歌
 
-                //
+                // 获取音乐
                 music = playState.getCurrent_songList().get(0);
-                //
+                // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
                 player = new MusicMediaPlayer(music);
                 playState.setCurrentIndex(0);
                 player.start();
 
-                //
+                // 刷新状态栏信息
                 refreshStatusBar(info);
             } else {
                 // 如果不是第一首歌，单击上一首就是播放上一首歌
 
-                //
+                // 获取音乐
                 music = playState.getCurrent_songList().get(index - 1);
-                //
+                // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
-                //
+                // 设置播放位置
                 playState.setCurrentIndex(index - 1);
                 player = new MusicMediaPlayer(music);
                 player.start();
 
-                //
+                // 刷新状态栏信息
                 refreshStatusBar(info);
             }
         }
     }
 
     /**
-     *
+     * 播放在我的音乐里的全部音乐
      */
     public void playAll() {
-        //
+        // 如果我的音乐里没有一首歌，则无事发生
         if (mainGUI.getMyMusicPageController().getTableView_songList().getItems().size() == 0) return;
 
-        //
+        // 清除播放列表里的歌曲
         mainGUI.getPlayListController().getTableView_songList().getItems().clear();
         playState.getCurrent_songList().clear();
 
-        //
+        // 将我的音乐列表里的歌曲全部添加到播放列表中
         mainGUI.getPlayListController().getTableView_songList().getItems().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
-        //
+        playState.getCurrent_songList().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
+        // 获得播放器然后播放
         MusicMediaPlayer player = new MusicMediaPlayer(mainGUI.getMyMusicPageController().getTableView_songList().getItems().get(0));
         player.start();
 
-        //
-        playState.getCurrent_songList().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
 
-        //
+        // 获得当前的歌曲总数，然后刷新信息
         String temp = String.valueOf(mainGUI.getMyMusicPageController().getTableView_songList().getItems().size());
         message.setValue(temp);
     }
@@ -524,23 +527,23 @@ public class Handler {
 
         // 分析数据后填充到链表中
         for (int i = 0; i < array.size(); i++) {
-            //
+            // 声明歌曲类和标签类
             Song song = new Song();
             Tag tag = new Tag();
 
-            //
+            // 获得 Json 里的对象
             JsonObject object = array.get(i).getAsJsonObject();
 
-            //
+            // 设置标签信息
             tag.setSongName(object.get("tag").getAsJsonObject().get("songName").getAsString());
             tag.setArtist(object.get("tag").getAsJsonObject().get("artist").getAsString());
             tag.setAlbum(object.get("tag").getAsJsonObject().get("album").getAsString());
             tag.setLength(object.get("tag").getAsJsonObject().get("length").getAsString());
-            //
+            // 设置标签
             song.setTag(tag);
             song.setPath(object.get("path").getAsString());
 
-            //
+            // 添加到音乐表中
             songList.add(song);
         }
 
@@ -595,7 +598,6 @@ public class Handler {
     }
 
     /**
-     *
      * @param socket
      * @param savePath
      * @throws IOException
@@ -605,21 +607,22 @@ public class Handler {
     }
 
     /**
-     *
+     * 刷新播放列表标签信息
      */
     public static void refreshPlayList() {
-        //
+        // 刷新信息
         message.set(String.valueOf(mainGUI.getPlayListController().getTableView_songList().getItems().size()));
         mainGUI.getMainController().getLabel_playList().textProperty().bind(message);
     }
 
     /**
+     * 刷新状态栏信息
      *
-     * @param info
+     * @param info 扩展信息
      */
     public static void refreshStatusBar(ExtendedInfo info) {
 
-        //
+        // 刷新信息
         mainGUI.getMainController().getLabel_BitRate().setText(info.getBitRate());
         mainGUI.getMainController().getLabel_channels().setText(info.getChannels());
         mainGUI.getMainController().getLabel_SampleRate().setText(info.getSampleRate());
@@ -631,32 +634,27 @@ public class Handler {
     }
 
     /**
+     * 列表是否打开
      *
-     * @return
+     * @return true 说明打开
      */
     public boolean isListOn() {
         return listOn;
     }
 
     /**
+     * 获取 message 的信息
      *
-     * @param listOn
-     */
-    public void setListOn(boolean listOn) {
-        this.listOn = listOn;
-    }
-
-    /**
-     *
-     * @return
+     * @return 返回 message 的信息
      */
     public static String getMessage() {
         return message.get();
     }
 
     /**
+     * 获取字符串属性
      *
-     * @return
+     * @return 返回字符串属性
      */
     public static StringProperty messageProperty() {
         return message;

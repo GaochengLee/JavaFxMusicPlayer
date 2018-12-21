@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e0050917-3fbe-4552-8810-685cff911af7" name="Default Changelist" comment="添加了一些注释，删除了一些没用的元素。">
+    <list default="true" id="e0050917-3fbe-4552-8810-685cff911af7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tool/ExcelTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool/ExcelTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tool/GetMusicInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool/GetMusicInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tool/PDFTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool/PDFTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tool/test.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,51 +24,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="28" />
+          <entry key="java" value="29" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="28" />
+          <entry key="JAVA" value="29" />
           <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1264" />
+          <entry key="java" value="2167" />
           <entry key="txt" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1264" />
+          <entry key="JAVA" value="2167" />
           <entry key="PLAIN_TEXT" value="51" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3193">
-              <caret line="621" column="10" selection-start-line="621" selection-start-column="10" selection-end-line="621" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tool/GetMusicInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="173" column="6" selection-start-line="173" selection-start-column="6" selection-end-line="173" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -92,10 +69,10 @@
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/entity/ExtendedInfo.java" />
         <option value="$PROJECT_DIR$/src/GUI/PercussionGUI.java" />
-        <option value="$PROJECT_DIR$/src/handler/Handler.java" />
-        <option value="$PROJECT_DIR$/src/tool/GetMusicInfo.java" />
         <option value="$PROJECT_DIR$/src/tool/PDFTool.java" />
         <option value="$PROJECT_DIR$/src/tool/ExcelTool.java" />
+        <option value="$PROJECT_DIR$/src/tool/GetMusicInfo.java" />
+        <option value="$PROJECT_DIR$/src/handler/Handler.java" />
       </list>
     </option>
   </component>
@@ -151,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545397148166" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545397327268" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/dom4j-1.6.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -221,7 +198,7 @@
       <option name="presentableId" value="Default" />
       <updated>1545368129089</updated>
       <workItem from="1545368132871" duration="478000" />
-      <workItem from="1545388658696" duration="7463000" />
+      <workItem from="1545388658696" duration="8429000" />
     </task>
     <task id="LOCAL-00001" summary="改变路径">
       <created>1545368422973</created>
@@ -244,15 +221,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545394438673</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加了一些注释，删除了一些没用的元素。">
+      <created>1545397334203</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545397334203</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7941000" />
+    <option name="totallyTimeSpent" value="8907000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -561,17 +544,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
+    <entry file="file://$PROJECT_DIR$/src/tool/GetMusicInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3193">
-          <caret line="621" column="10" selection-start-line="621" selection-start-column="10" selection-end-line="621" selection-end-column="10" />
+        <state relative-caret-position="285">
+          <caret line="213" column="21" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tool/GetMusicInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="173" column="6" selection-start-line="173" selection-start-column="6" selection-end-line="173" selection-end-column="6" />
+        <state relative-caret-position="1537">
+          <caret line="656" column="22" selection-start-line="656" selection-start-column="22" selection-end-line="656" selection-end-column="22" />
+          <folding>
+            <element signature="e#19179#19180#0" expanded="true" />
+            <element signature="e#19208#19209#0" expanded="true" />
+            <element signature="e#19412#19413#0" expanded="true" />
+            <element signature="e#19448#19449#0" expanded="true" />
+            <element signature="e#19540#19541#0" expanded="true" />
+            <element signature="e#19570#19571#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

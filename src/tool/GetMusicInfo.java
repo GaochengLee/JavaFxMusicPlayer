@@ -170,17 +170,29 @@ public class GetMusicInfo {
 
     }
 
+    /**
+     * 获取音乐的扩展信息
+     *
+     * @param path 音乐的保存路径
+     * @return 返回扩展信息
+     */
     public static ExtendedInfo getExtendedInfo(String path) {
+        // MP3文件
         MP3File file;
+        // 扩展信息
         ExtendedInfo info = null;
         String Copyright = "空";
         String Genre = "空";
 
         try {
+            // 文件路径
             File f = new File(path);
+            // MP3文件
             file = new MP3File(path);
+            // 扩展信息
             info = new ExtendedInfo();
 
+            // 获得扩展信息
             String BitRate = file.getMP3AudioHeader().getBitRate();
             String Channels = file.getMP3AudioHeader().getChannels();
             String SampleRate = file.getMP3AudioHeader().getSampleRate();
@@ -188,17 +200,18 @@ public class GetMusicInfo {
             String Format = file.getMP3AudioHeader().getFormat();
             String Size = String.valueOf(f.length());
 
-
+            // 获得扩展信息 并清除无用字符
             if (file.getID3v2Tag().frameMap.containsKey("TCOP")) {
                 Copyright = file.getID3v2Tag().frameMap.get("TCOP").toString();
                 Copyright = Copyright.substring(6, Copyright.length() - 3);
             }
+            // 获得扩展信息 并清除无用字符
             if (file.getID3v2Tag().frameMap.containsKey("TCON")) {
                 Genre = file.getID3v2Tag().frameMap.get("TCON").toString();
                 Genre = Genre.substring(6, Genre.length() - 3);
             }
 
-
+            // 设置扩展信息
             info.setBitRate(BitRate);
             info.setChannels(Channels);
             info.setSampleRate(SampleRate);

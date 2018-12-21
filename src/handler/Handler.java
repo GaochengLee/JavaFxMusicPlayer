@@ -40,7 +40,6 @@ import java.util.List;
 /**
  * Handler 类
  * 设计此类的目的主要就是为了减少各个控制器中的事件处理方法
- * 由于某些原因，还没能处理好，所以有些地方看起来不够完善
  *
  * @author 李高丞
  * @version 1.0 Beta
@@ -82,20 +81,27 @@ public class Handler {
         Handler.mainGUI = mainGUI;
     }
 
+    /**
+     *
+     */
     public void search() {
+        //
         MainController mainController = mainGUI.getMainController();
+        //
         String msg = mainController.getTextField_searchSong().getText();
-
+        //
         mainController.getButton_search().setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 if (msg != null) {
+                    //
                     MainController.getServerOut().println("# search " + msg);
-
+                    //
                     new Thread(new Runnable() {
                         @Override
                         public void run() {
                             try {
+                                //
                                 Handler.receiveFile(MainController.getSocket());
                             } catch (Exception e) {
                                 e.printStackTrace();
@@ -114,10 +120,16 @@ public class Handler {
         });
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     public void exportExcel() throws Exception {
+        //
         Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
+        //
         ExcelTool.CreateMsg(music);
-
+        //
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("通知");
         alert.setHeaderText("^-^");
@@ -125,10 +137,16 @@ public class Handler {
         alert.show();
     }
 
+    /**
+     *
+     * @throws Exception
+     */
     public void exportPDF() throws Exception {
+        //
         Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
+        //
         PDFTool.CreatePDF(music);
-
+        //
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("通知");
         alert.setHeaderText("^-^");
@@ -154,6 +172,7 @@ public class Handler {
 
         System.out.println(tableView.getItems());
 
+        //
         ExtendedInfo info = GetMusicInfo.getExtendedInfo(index.getPath());
 
         // 开始播放歌曲
@@ -167,6 +186,7 @@ public class Handler {
         message.set(String.valueOf(mainGUI.getPlayListController().getTableView_songList().getItems().size()));
         mainGUI.getMainController().getLabel_playList().textProperty().bind(message);
 
+        //
         refreshStatusBar(info);
     }
 
@@ -174,11 +194,14 @@ public class Handler {
      * 弹出播放列表和不弹出播放列表
      */
     public void playList() {
+        //
         listOn = !listOn;
         if (listOn) {
+            //
             mainGUI.getMainPane().setCenter(null);
             mainGUI.getMainPane().setCenter(mainGUI.getPlayList());
         } else {
+            //
             mainGUI.getMainPane().setCenter(null);
             mainGUI.getMainPane().setCenter(mainGUI.getMyMusicPage());
         }
@@ -191,9 +214,12 @@ public class Handler {
 
         // 获取当前播放歌曲的位置
         int index = playState.getCurrentIndex();
+        //
         Music music;
+        //
         ExtendedInfo info;
 
+        //
         if (playState.getCurrent_songList().size() == 0) return;
 
         // 判断是否是最后一位
@@ -214,20 +240,31 @@ public class Handler {
             // 如果不是最后一位
             if ((index + 1) >= playState.getCurrent_songList().size()) {
 
+                //
                 music = playState.getCurrent_songList().get(0);
+                //
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+                //
                 player = new MusicMediaPlayer(music);
+                //
                 playState.setCurrentIndex(0);
+                //
                 player.start();
+                //
                 refreshStatusBar(info);
             } else {
+                //
                 music = playState.getCurrent_songList().get(index + 1);
+                //
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+                //
                 player = new MusicMediaPlayer(music);
+                //
                 playState.setCurrentIndex(index + 1);
                 player.start();
+                //
                 refreshStatusBar(info);
             }
         }
@@ -241,63 +278,83 @@ public class Handler {
 
         // 获取当前播放歌曲的位置
         int index = playState.getCurrentIndex();
+        //
         Music music;
+        //
         ExtendedInfo info;
 
+        //
         if (playState.getCurrent_songList().size() == 0) return;
 
         // 如果播放列表只有一首歌，那么单击就是继续播放这首歌
         if (playState.getCurrent_songList().size() == 1) {
+            //
             music = playState.getCurrent_songList().get(index);
+            //
             info = GetMusicInfo.getExtendedInfo(music.getPath());
 
             player = new MusicMediaPlayer(music);
             playState.setCurrentIndex(0);
             player.start();
 
+            //
             refreshStatusBar(info);
         } else {
             // 如果播放列表不只是一首歌
             if (index == 0) {
                 // 如果是第一首歌，单击上一首还是播放这首歌
-                System.out.println(123);
 
+                //
                 music = playState.getCurrent_songList().get(0);
+                //
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
                 player = new MusicMediaPlayer(music);
                 playState.setCurrentIndex(0);
                 player.start();
 
+                //
                 refreshStatusBar(info);
             } else {
                 // 如果不是第一首歌，单击上一首就是播放上一首歌
 
-                System.out.println(999);
+                //
                 music = playState.getCurrent_songList().get(index - 1);
+                //
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+                //
                 playState.setCurrentIndex(index - 1);
                 player = new MusicMediaPlayer(music);
                 player.start();
 
+                //
                 refreshStatusBar(info);
             }
         }
     }
 
+    /**
+     *
+     */
     public void playAll() {
+        //
         if (mainGUI.getMyMusicPageController().getTableView_songList().getItems().size() == 0) return;
 
+        //
         mainGUI.getPlayListController().getTableView_songList().getItems().clear();
         playState.getCurrent_songList().clear();
 
+        //
         mainGUI.getPlayListController().getTableView_songList().getItems().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
+        //
         MusicMediaPlayer player = new MusicMediaPlayer(mainGUI.getMyMusicPageController().getTableView_songList().getItems().get(0));
         player.start();
 
+        //
         playState.getCurrent_songList().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
 
+        //
         String temp = String.valueOf(mainGUI.getMyMusicPageController().getTableView_songList().getItems().size());
         message.setValue(temp);
     }
@@ -467,20 +524,24 @@ public class Handler {
 
         // 分析数据后填充到链表中
         for (int i = 0; i < array.size(); i++) {
+            //
             Song song = new Song();
             Tag tag = new Tag();
 
+            //
             JsonObject object = array.get(i).getAsJsonObject();
 
+            //
             tag.setSongName(object.get("tag").getAsJsonObject().get("songName").getAsString());
             tag.setArtist(object.get("tag").getAsJsonObject().get("artist").getAsString());
             tag.setAlbum(object.get("tag").getAsJsonObject().get("album").getAsString());
             tag.setLength(object.get("tag").getAsJsonObject().get("length").getAsString());
+            //
             song.setTag(tag);
             song.setPath(object.get("path").getAsString());
 
+            //
             songList.add(song);
-
         }
 
         return songList;
@@ -534,6 +595,7 @@ public class Handler {
     }
 
     /**
+     *
      * @param socket
      * @param savePath
      * @throws IOException
@@ -542,13 +604,22 @@ public class Handler {
         //todo: 能够将文件保存目录确定的方法 （暂未完成）
     }
 
+    /**
+     *
+     */
     public static void refreshPlayList() {
+        //
         message.set(String.valueOf(mainGUI.getPlayListController().getTableView_songList().getItems().size()));
         mainGUI.getMainController().getLabel_playList().textProperty().bind(message);
     }
 
+    /**
+     *
+     * @param info
+     */
     public static void refreshStatusBar(ExtendedInfo info) {
 
+        //
         mainGUI.getMainController().getLabel_BitRate().setText(info.getBitRate());
         mainGUI.getMainController().getLabel_channels().setText(info.getChannels());
         mainGUI.getMainController().getLabel_SampleRate().setText(info.getSampleRate());
@@ -559,18 +630,34 @@ public class Handler {
         mainGUI.getMainController().getLabel_size().setText(info.getSize());
     }
 
+    /**
+     *
+     * @return
+     */
     public boolean isListOn() {
         return listOn;
     }
 
+    /**
+     *
+     * @param listOn
+     */
     public void setListOn(boolean listOn) {
         this.listOn = listOn;
     }
 
+    /**
+     *
+     * @return
+     */
     public static String getMessage() {
         return message.get();
     }
 
+    /**
+     *
+     * @return
+     */
     public static StringProperty messageProperty() {
         return message;
     }

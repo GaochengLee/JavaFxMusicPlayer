@@ -277,6 +277,26 @@ public class ClickAction implements EventHandler<MouseEvent> {
                     e.printStackTrace();
                 }
             });
+            download.setOnAction(event -> {
+                // 如果是搜索界面区域
+                // 确认选择的音乐
+                Music music = searchController.getTableView_songList().getSelectionModel().getSelectedItem();
+                // 向服务器发送传输文件请求
+                MainController.getServerOut().println("# send " + music.getMusicTitle());
+                // 启动线程来接受文件
+                Thread thread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        try {
+                            // 接受文件
+                            Handler.receiveFile(MainController.getSocket());
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                        }
+                    }
+                });
+                thread.start();
+            });
 
         }
 

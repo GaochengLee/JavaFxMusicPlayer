@@ -179,6 +179,8 @@ public class Song {
                 songList.add(song);
             }
 
+        } catch (IllegalStateException e) {
+            System.err.println("Empty json file.");
         } catch (Exception e) {
             e.printStackTrace();
         }

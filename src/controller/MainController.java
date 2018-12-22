@@ -612,8 +612,6 @@ public class MainController {
         for (Music music: mainGUI.getMyMusicPageController().getTableView_songList().getItems())
             songList.add(Music.musicToSong(music));
 
-        System.out.println(songList);
-
         Song.songToJson(songList);
         Platform.exit();
         System.exit(0);

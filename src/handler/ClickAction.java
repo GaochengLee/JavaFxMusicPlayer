@@ -11,6 +11,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.MenuItem;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import service.MusicMediaPlayer;
 import service.PlayState;
 
 import java.awt.*;
@@ -248,6 +249,16 @@ public class ClickAction implements EventHandler<MouseEvent> {
                 playState.getCurrent_songList().remove(deleteMusic);
                 // 刷新播放列表
                 Handler.refreshPlayList();
+
+                System.out.println(playState.getCurrentMusic());
+                System.out.println(deleteMusic);
+                if (playListController.getTableView_songList().getItems().size() == 0)
+                    new MusicMediaPlayer().stop();
+                else if (playState.getCurrentMusic() == deleteMusic){
+                    handler.nextPlay();
+                }
+
+
             });
             // 设置在播放列表路径选项事件
             pathInPlayList.setOnAction(event -> {

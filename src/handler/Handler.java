@@ -206,6 +206,7 @@ public class Handler {
         // 获取扩展信息
         ExtendedInfo info = GetMusicInfo.getExtendedInfo(index.getPath());
 
+        playState.setCurrentMusic(index);
         // 开始播放歌曲
         player = new MusicMediaPlayer(index);
         player.start();
@@ -259,6 +260,7 @@ public class Handler {
             music = playState.getCurrent_songList().get(0);
             info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+            playState.setCurrentMusic(music);
             // 开始播放
             player = new MusicMediaPlayer(music);
             player.start();
@@ -273,6 +275,7 @@ public class Handler {
                 // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+                playState.setCurrentMusic(music);
                 // 获取播放器
                 player = new MusicMediaPlayer(music);
                 // 设置当前播放位置为 0
@@ -287,6 +290,7 @@ public class Handler {
                 // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+                playState.setCurrentMusic(music);
                 // 获取播放器
                 player = new MusicMediaPlayer(music);
                 // 设置当前播放位置为 index + 1
@@ -321,6 +325,7 @@ public class Handler {
             // 获取扩展信息
             info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+            playState.setCurrentMusic(music);
             player = new MusicMediaPlayer(music);
             playState.setCurrentIndex(0);
             player.start();
@@ -337,6 +342,7 @@ public class Handler {
                 // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+                playState.setCurrentMusic(music);
                 player = new MusicMediaPlayer(music);
                 playState.setCurrentIndex(0);
                 player.start();
@@ -353,6 +359,7 @@ public class Handler {
 
                 // 设置播放位置
                 playState.setCurrentIndex(index - 1);
+                playState.setCurrentMusic(music);
                 player = new MusicMediaPlayer(music);
                 player.start();
 
@@ -377,13 +384,21 @@ public class Handler {
         mainGUI.getPlayListController().getTableView_songList().getItems().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
         playState.getCurrent_songList().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
         // 获得播放器然后播放
-        MusicMediaPlayer player = new MusicMediaPlayer(mainGUI.getMyMusicPageController().getTableView_songList().getItems().get(0));
+
+        Music firstMusic = mainGUI.getMyMusicPageController().getTableView_songList().getItems().get(0);
+        ExtendedInfo info = GetMusicInfo.getExtendedInfo(firstMusic.getPath());
+
+        playState.setCurrentMusic(firstMusic);
+        MusicMediaPlayer player = new MusicMediaPlayer(firstMusic);
         player.start();
 
 
-        // 获得当前的歌曲总数，然后刷新信息
-        String temp = String.valueOf(mainGUI.getMyMusicPageController().getTableView_songList().getItems().size());
-        message.setValue(temp);
+        // 将字符串协议和主界面的播放列表内歌曲数目绑定，
+        // 每次播放都会更新
+        message.set(String.valueOf(mainGUI.getPlayListController().getTableView_songList().getItems().size()));
+        mainGUI.getMainController().getLabel_playList().textProperty().bind(message);
+
+        refreshStatusBar(info);
     }
 
     /**

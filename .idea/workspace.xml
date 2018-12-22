@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e0050917-3fbe-4552-8810-685cff911af7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MyMusicPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MyMusicPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/ClickAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/ClickAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/Handler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,13 +28,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="3" />
-          <entry key="java" value="60" />
+          <entry key="java" value="67" />
           <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="60" />
+          <entry key="JAVA" value="67" />
           <entry key="Markdown" value="2" />
           <entry key="XML" value="3" />
         </counts>
@@ -42,16 +43,16 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="fxml" value="8" />
-          <entry key="java" value="5816" />
+          <entry key="java" value="6082" />
           <entry key="md" value="22" />
-          <entry key="txt" value="115" />
+          <entry key="txt" value="130" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5816" />
+          <entry key="JAVA" value="6082" />
           <entry key="Markdown" value="22" />
-          <entry key="PLAIN_TEXT" value="122" />
+          <entry key="PLAIN_TEXT" value="137" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
@@ -62,40 +63,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/handler/ClickAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3048">
-              <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/entity/Song.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3816">
-              <caret line="182" column="48" selection-start-line="182" selection-start-column="48" selection-end-line="182" selection-end-column="48" />
+            <state relative-caret-position="1287">
+              <caret line="252" column="57" lean-forward="true" selection-start-line="252" selection-start-column="57" selection-end-line="252" selection-end-column="57" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#10811#10812#0" expanded="true" />
+                <element signature="e#10853#10854#0" expanded="true" />
+                <element signature="e#10988#10989#0" expanded="true" />
+                <element signature="e#11030#11031#0" expanded="true" />
+                <element signature="e#11167#11168#0" expanded="true" />
+                <element signature="e#11211#11212#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/SearchPageController.java">
+        <entry file="file://$PROJECT_DIR$/src/service/PlayState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4128">
-              <caret line="205" column="56" selection-start-line="205" selection-start-column="56" selection-end-line="205" selection-end-column="56" />
+            <state relative-caret-position="2223">
+              <caret line="250" column="27" selection-start-line="250" selection-start-column="27" selection-end-line="250" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2815#2816#0" expanded="true" />
+                <element signature="e#2850#2851#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/MyMusicPageController.java">
+        <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="285" column="47" lean-forward="true" selection-start-line="285" selection-start-column="47" selection-end-line="285" selection-end-column="47" />
+            <state relative-caret-position="672">
+              <caret line="400" column="29" selection-start-line="400" selection-start-column="29" selection-end-line="400" selection-end-column="29" />
               <folding>
-                <element signature="e#5671#5672#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,6 +118,8 @@
     <findStrings>
       <find>Learn</find>
       <find>json</find>
+      <find>stop</find>
+      <find>image</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,7 +135,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/service/PlayState.java" />
-        <option value="$PROJECT_DIR$/src/service/MusicMediaPlayer.java" />
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/entity/ExtendedInfo.java" />
         <option value="$PROJECT_DIR$/src/GUI/PercussionGUI.java" />
@@ -149,13 +152,14 @@
         <option value="$PROJECT_DIR$/src/mainGUI/selectedExcelGUI.java" />
         <option value="$PROJECT_DIR$/src/tool/XMLTool.java" />
         <option value="$PROJECT_DIR$/src/tool/SongTool.java" />
-        <option value="$PROJECT_DIR$/src/handler/Handler.java" />
         <option value="$PROJECT_DIR$/src/entity/Music.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/handler/ClickAction.java" />
         <option value="$PROJECT_DIR$/src/entity/Song.java" />
         <option value="$PROJECT_DIR$/src/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/controller/MyMusicPageController.java" />
+        <option value="$PROJECT_DIR$/src/service/MusicMediaPlayer.java" />
+        <option value="$PROJECT_DIR$/src/handler/ClickAction.java" />
+        <option value="$PROJECT_DIR$/src/handler/Handler.java" />
       </list>
     </option>
   </component>
@@ -208,6 +212,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -217,7 +227,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545442689014" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545444032875" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/dom4j-1.6.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -304,7 +314,7 @@
       <workItem from="1545368132871" duration="478000" />
       <workItem from="1545388658696" duration="10565000" />
       <workItem from="1545403218748" duration="10964000" />
-      <workItem from="1545442824341" duration="236000" />
+      <workItem from="1545442824341" duration="1201000" />
     </task>
     <task id="LOCAL-00001" summary="改变路径">
       <created>1545368422973</created>
@@ -362,17 +372,24 @@
       <option name="project" value="LOCAL" />
       <updated>1545441928831</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="添加了我的音乐界面的歌曲序列">
+      <created>1545443217609</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545443217609</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22252000" />
+    <option name="totallyTimeSpent" value="23208000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="62" width="1536" height="862" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1795393" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -381,7 +398,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3286334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,16 +468,10 @@
     <MESSAGE value="添加了一些注释" />
     <MESSAGE value="实现了存储本地音乐到一个文件里，然后每次启动播放器都可以读取本地文件" />
     <MESSAGE value="修正了一些错误" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正了一些错误" />
+    <MESSAGE value="添加了我的音乐界面的歌曲序列" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了我的音乐界面的歌曲序列" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/service/PlayState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4488">
-          <caret line="187" column="18" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -482,13 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/MusicMediaPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2136">
-          <caret line="332" column="53" lean-forward="true" selection-start-line="332" selection-start-column="53" selection-end-line="332" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tool/MP3Info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -501,6 +505,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2280">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#3498#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -537,16 +544,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mainGUI/selectedExcel.fxml" />
     <entry file="file://$PROJECT_DIR$/src/mainGUI/selectedExcelGUI.java" />
-    <entry file="file://$PROJECT_DIR$/src/controller/LeftMusicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="326" column="38" selection-start-line="326" selection-start-column="38" selection-end-line="326" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/FileJson.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -577,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6888">
-          <caret line="81" column="24" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -605,19 +595,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="148" column="18" lean-forward="true" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+          <folding>
+            <element signature="e#5265#5266#0" expanded="true" />
+            <element signature="e#5305#5306#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/ClickAction.java">
+    <entry file="file://$PROJECT_DIR$/src/service/MusicMediaPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3048">
-          <caret line="141" column="39" selection-start-line="141" selection-start-column="39" selection-end-line="141" selection-end-column="39" />
+        <state relative-caret-position="-3895">
+          <caret line="313" column="10" lean-forward="true" selection-start-line="313" selection-start-column="10" selection-end-line="313" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/entity/Song.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3816">
+        <state relative-caret-position="504">
           <caret line="182" column="48" selection-start-line="182" selection-start-column="48" selection-end-line="182" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -627,17 +621,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/SearchPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4128">
+        <state relative-caret-position="504">
           <caret line="205" column="56" selection-start-line="205" selection-start-column="56" selection-end-line="205" selection-end-column="56" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/MyMusicPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="285" column="47" lean-forward="true" selection-start-line="285" selection-start-column="47" selection-end-line="285" selection-end-column="47" />
+        <state relative-caret-position="399">
+          <caret line="286" column="50" lean-forward="true" selection-start-line="286" selection-start-column="50" selection-end-line="286" selection-end-column="50" />
           <folding>
+            <element signature="e#5196#5672#0" expanded="true" />
             <element signature="e#5671#5672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/LeftMusicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1161">
+          <caret line="326" column="38" selection-start-line="326" selection-start-column="38" selection-end-line="326" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/PlayState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2223">
+          <caret line="250" column="27" selection-start-line="250" selection-start-column="27" selection-end-line="250" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2815#2816#0" expanded="true" />
+            <element signature="e#2850#2851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handler/ClickAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1287">
+          <caret line="252" column="57" lean-forward="true" selection-start-line="252" selection-start-column="57" selection-end-line="252" selection-end-column="57" />
+          <folding>
+            <element signature="e#10811#10812#0" expanded="true" />
+            <element signature="e#10853#10854#0" expanded="true" />
+            <element signature="e#10988#10989#0" expanded="true" />
+            <element signature="e#11030#11031#0" expanded="true" />
+            <element signature="e#11167#11168#0" expanded="true" />
+            <element signature="e#11211#11212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="400" column="29" selection-start-line="400" selection-start-column="29" selection-end-line="400" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

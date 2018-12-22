@@ -5,12 +5,12 @@
 
 package controller;
 
+import mainGUI.ChatRoomGUI;
 import mainGUI.Main;
 import mainGUI.PercussionGUI;
 import handler.Handler;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
@@ -332,15 +332,17 @@ public class LeftMusicController {
     }
 
     /**
-     * 弹出一个聊天室界面登录后可以聊天
+     * 弹出一个聊天室界面，可以聊天
      */
     @FXML
     private void Action_chatRoom() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("通知");
-        alert.setHeaderText("^-^");
-        alert.setContentText("聊天室功能尚在开发");
-        alert.showAndWait();
+        Platform.runLater(() -> {
+            try {
+                new ChatRoomGUI().start(new Stage());
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
     }
 
     /**
@@ -348,11 +350,14 @@ public class LeftMusicController {
      */
     @FXML
     private void Action_game() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("通知");
-        alert.setHeaderText("^-^");
-        alert.setContentText("小游戏功能尚在开发");
-        alert.showAndWait();
+        Platform.runLater(() -> {
+
+        });
+//        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+//        alert.setTitle("通知");
+//        alert.setHeaderText("^-^");
+//        alert.setContentText("小游戏功能尚在开发");
+//        alert.showAndWait();
     }
 
     /**

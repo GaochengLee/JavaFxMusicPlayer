@@ -46,6 +46,9 @@ public class Server extends Thread {
      */
     private static LinkedList<Song> list = new LinkedList<>();
 
+    private static ArrayList<PrintWriter> clientOutputStream = new ArrayList<>();
+    private static LinkedList<Socket> client = new LinkedList<>();
+
     /**
      * 服务器端启动的 main 方法
      *
@@ -116,7 +119,7 @@ public class Server extends Thread {
                     // 获取根据搜索关键字发送过来的信息，生成一个链表来存放服务器端搜索到的信息
                     LinkedList<Song> songList = getByKeyword(split[2], list);
 
-                    Song song = getSong(split[3], split[2] , songList);
+                    Song song = getSong(split[3], split[2], songList);
                     System.out.println(song);
 
 
@@ -124,12 +127,22 @@ public class Server extends Thread {
                     sendFile(clientSocket, new File(song.getPath() + "\\" + song.getTag().getArtist() +
                             " - " + song.getTag().getSongName() + ".mp3"));
                 }
+                if (split[1].equals("message")) {
+                    String name = split[2];
+                    String message = split[3];
+
+                    System.out.println("Message [from client " +
+                            clientSocket.getInetAddress().getHostAddress() + ":" +
+                            clientSocket.getPort() + "]: " + message);
+
+                    sendToEveryClient(message, name);
+                }
             }
         } catch (Exception e) {
             //e.printStackTrace();
             System.out.println("error: " + e.getMessage());
-//                System.out.println("Client " + clientSocket.getInetAddress().getHostAddress()
-//                        + ":" + clientSocket.getPort() + " quit the server!");
+            System.out.println("Client " + clientSocket.getInetAddress().getHostAddress()
+                    + ":" + clientSocket.getPort() + " quit the server!");
         }
 
     }
@@ -273,7 +286,7 @@ public class Server extends Thread {
     }
 
     private static Song getSong(String singer, String songName, List<Song> songList) {
-        for (Song s : songList){
+        for (Song s : songList) {
             if (s.getTag().getArtist().equals(singer) && s.getTag().getSongName().equals(songName))
                 return s;
         }
@@ -287,7 +300,7 @@ public class Server extends Thread {
     static class serverHandler extends Thread {
         @Override
         public void run() {
-
+            System.out.println("Server started... wait ");
             while (true) {
                 try {
                     // 接受客户端套接字
@@ -295,11 +308,28 @@ public class Server extends Thread {
                     // 启动服务器线程
                     new Server(socket).start();
 
+                    PrintWriter printWriter = new PrintWriter(socket.getOutputStream());
+                    clientOutputStream.add(printWriter);
+                    client.add(socket);
+
                 } catch (IOException e) {
                     //e.printStackTrace();
                     System.out.println("Some problem happen !");
                     System.exit(1);
                 }
+            }
+        }
+    }
+
+    private static void sendToEveryClient(String message, String name) {
+        Iterator<PrintWriter> it = clientOutputStream.iterator();
+        while (it.hasNext()) {
+            try {
+                PrintWriter writer = it.next();
+                writer.println("From" + name + " said : " + message);
+                writer.flush();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         }
     }

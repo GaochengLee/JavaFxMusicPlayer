@@ -7,31 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0050917-3fbe-4552-8810-685cff911af7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/copyright.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/leftMusic/leftMusicPink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/main/mainPink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/myMusicPage/myMusicPink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/playListPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/playListPagePink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/searchPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/searchPagePink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/当你.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/林俊杰 - 当你.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/林俊杰 - 当你.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LeftMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeftMusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MyMusicPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MyMusicPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftMusic/music.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/musicDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftMusic/musicDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/myMusicPage/myMusicPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/myMusicPage/myMusicPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handler/ClickAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/ClickAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainGUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/leftMusicList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/leftMusicList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/playList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/playList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,7 +45,7 @@
           <entry key="CSS" value="25" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="133" />
+          <entry key="JAVA" value="136" />
           <entry key="Markdown" value="2" />
           <entry key="XML" value="15" />
         </counts>
@@ -84,9 +62,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1686" />
-          <entry key="JAVA" value="9482" />
+          <entry key="JAVA" value="9673" />
           <entry key="Markdown" value="22" />
-          <entry key="PLAIN_TEXT" value="267" />
+          <entry key="PLAIN_TEXT" value="291" />
           <entry key="XML" value="86" />
         </counts>
       </usages-collector>
@@ -94,47 +72,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/handler/ClickAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5323">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#11938#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#11272#11273#0" expanded="true" />
-                <element signature="e#11314#11315#0" expanded="true" />
-                <element signature="e#11449#11450#0" expanded="true" />
-                <element signature="e#11491#11492#0" expanded="true" />
-                <element signature="e#11628#11629#0" expanded="true" />
-                <element signature="e#11672#11673#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mainGUI/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4558">
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="e#0#7061#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java">
+        <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+            <state relative-caret-position="345">
+              <caret line="192" column="13" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
               <folding>
-                <element signature="e#0#3319#0" expanded="true" />
                 <element signature="imports" expanded="true" />
+                <element signature="e#21530#21531#0" expanded="true" />
+                <element signature="e#21559#21560#0" expanded="true" />
+                <element signature="e#21675#21676#0" expanded="true" />
+                <element signature="e#21711#21712#0" expanded="true" />
+                <element signature="e#21826#21827#0" expanded="true" />
+                <element signature="e#21856#21857#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tool/ExcelTool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -195,7 +155,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/service/MusicMediaPlayer.java" />
         <option value="$PROJECT_DIR$/src/entity/Song.java" />
-        <option value="$PROJECT_DIR$/src/handler/Handler.java" />
         <option value="$PROJECT_DIR$/src/service/PlayState.java" />
         <option value="$PROJECT_DIR$/src/css/main/main.css" />
         <option value="$USER_HOME$/Downloads/Compressed/MyTetris/src/com/fry/tetris/Tetris.java" />
@@ -220,12 +179,13 @@
         <option value="$PROJECT_DIR$/src/css/searchPage.css" />
         <option value="$PROJECT_DIR$/src/css/playListPagePink.css" />
         <option value="$PROJECT_DIR$/src/css/playListPage.css" />
-        <option value="$PROJECT_DIR$/src/mainGUI/Main.java" />
         <option value="$PROJECT_DIR$/src/controller/LeftMusicController.java" />
         <option value="$PROJECT_DIR$/src/controller/MyMusicPageController.java" />
         <option value="$PROJECT_DIR$/src/net/Server.java" />
         <option value="$PROJECT_DIR$/src/handler/ClickAction.java" />
         <option value="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" />
+        <option value="$PROJECT_DIR$/src/mainGUI/Main.java" />
+        <option value="$PROJECT_DIR$/src/handler/Handler.java" />
       </list>
     </option>
   </component>
@@ -236,8 +196,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="321" />
-    <option name="y" value="53" />
+    <option name="x" value="218" />
+    <option name="y" value="76" />
     <option name="width" value="1536" />
     <option name="height" value="862" />
   </component>
@@ -259,6 +219,31 @@
               <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="myMusicPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="mainGUI" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -269,7 +254,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545490513309" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545492123186" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/MyTetris" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -349,7 +334,7 @@
       <workItem from="1545403218748" duration="10964000" />
       <workItem from="1545442824341" duration="1293000" />
       <workItem from="1545451068151" duration="3571000" />
-      <workItem from="1545455279012" duration="27611000" />
+      <workItem from="1545455279012" duration="29291000" />
     </task>
     <task id="LOCAL-00001" summary="改变路径">
       <created>1545368422973</created>
@@ -456,17 +441,23 @@
       <option name="project" value="LOCAL" />
       <updated>1545480252840</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="添加注释 删除一些东西 css不想写了">
+      <created>1545490753994</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1545490753994</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54482000" />
+    <option name="totallyTimeSpent" value="56162000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="321" y="53" width="1536" height="862" extended-state="0" />
-    <editor active="true" />
+    <frame x="218" y="76" width="1536" height="862" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.1605691" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.1605691" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16897655" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -475,7 +466,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4110629" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4107143" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,7 +543,8 @@
     <MESSAGE value=" 添加了聊天室功能" />
     <MESSAGE value="添加了一些图片，并加上了小游戏（不是自己写），但游戏退出主程序也会退出" />
     <MESSAGE value="新添图片" />
-    <option name="LAST_COMMIT_MESSAGE" value="新添图片" />
+    <MESSAGE value="添加注释 删除一些东西 css不想写了" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加注释 删除一些东西 css不想写了" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Downloads/Compressed/MyTetris/src/com/fry/tetris/Z.png">
@@ -829,16 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10488">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainGUI/PercussionGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1037">
@@ -889,13 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tool/ExcelTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-172">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/Server.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4828">
@@ -903,9 +878,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="143" column="27" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#3319#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/handler/ClickAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5323">
+        <state relative-caret-position="-4983">
           <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding>
             <element signature="e#0#11938#0" expanded="true" />
@@ -920,24 +906,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tool/ExcelTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainGUI/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4558">
-          <caret lean-forward="true" />
+        <state relative-caret-position="323">
+          <caret line="196" column="63" selection-start-line="196" selection-start-column="63" selection-end-line="196" selection-end-column="63" />
           <folding>
-            <element signature="e#0#7061#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java">
+    <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
+        <state relative-caret-position="345">
+          <caret line="192" column="13" selection-start-line="192" selection-start-column="13" selection-end-line="192" selection-end-column="13" />
           <folding>
-            <element signature="e#0#3319#0" expanded="true" />
             <element signature="imports" expanded="true" />
+            <element signature="e#21530#21531#0" expanded="true" />
+            <element signature="e#21559#21560#0" expanded="true" />
+            <element signature="e#21675#21676#0" expanded="true" />
+            <element signature="e#21711#21712#0" expanded="true" />
+            <element signature="e#21826#21827#0" expanded="true" />
+            <element signature="e#21856#21857#0" expanded="true" />
           </folding>
         </state>
       </provider>

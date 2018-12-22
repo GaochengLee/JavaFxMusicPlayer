@@ -141,9 +141,15 @@ public class Handler {
                 a.show();
                 return;
             }
+            Music music;
 
             // 获取被选中的音乐
-            Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
+            if ((music = mainGUI.
+                    getMyMusicPageController().
+                    getTableView_songList().
+                    getSelectionModel().
+                    getSelectedItem()) != null)
+
             // 生成 Excel 文件
             ExcelTool.CreateMsg(music);
             // 提示信息
@@ -176,8 +182,17 @@ public class Handler {
                 return;
             }
 
+            Music music;
+
             // 获取被选中的音乐
-            Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
+            if ((music = mainGUI.
+                    getMyMusicPageController().
+                    getTableView_songList().
+                    getSelectionModel().
+                    getSelectedItem()) != null)
+            {}
+
+                DirectoryChooser chooser = new DirectoryChooser();
             // 生成 PDF 文件
             PDFTool.CreatePDF(music);
             // 提示信息

@@ -5,6 +5,8 @@
 
 package controller;
 
+import entity.Music;
+import entity.Song;
 import mainGUI.Main;
 import handler.Handler;
 import javafx.application.Platform;
@@ -21,6 +23,8 @@ import javafx.scene.layout.StackPane;
 
 import java.io.*;
 import java.net.Socket;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 主面板的控制器从FXML中获取 fx:id 设置一系列的 get 方法
@@ -604,6 +608,13 @@ public class MainController {
      */
     @FXML
     private void Action_exit(ActionEvent e) {
+        List<Song> songList = new LinkedList<>();
+        for (Music music: mainGUI.getMyMusicPageController().getTableView_songList().getItems())
+            songList.add(Music.musicToSong(music));
+
+        System.out.println(songList);
+
+        Song.songToJson(songList);
         Platform.exit();
         System.exit(0);
     }

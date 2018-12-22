@@ -145,6 +145,20 @@ public class Music {
         return getPath().substring(0, getPath().length() - 3) + "png";
     }
 
+    public static Song musicToSong(Music music) {
+        Song song = new Song();
+        Tag tag = new Tag();
+
+        song.setPath(music.getPath());
+        tag.setAlbum(music.getAlbumName());
+        tag.setArtist(music.getMusicSinger());
+        tag.setSongName(music.getMusicTitle());
+        tag.setLength(music.getMusicTimeLength());
+        song.setTag(tag);
+
+        return song;
+    }
+
     /**
      * 重写了 equals 方法便于比较
      *

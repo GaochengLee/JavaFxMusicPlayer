@@ -71,18 +71,22 @@ public class Handler {
      */
     private MusicMediaPlayer player;
 
+    private static int isFirstExportExcel = 1;
+
+    private static int isFirstExportPDF = 1;
+
 
     /**
      * 获得 main类
      *
-     * @param mainGUI
+     * @param mainGUI 主类
      */
     public Handler(Main mainGUI) {
         Handler.mainGUI = mainGUI;
     }
 
     /**
-     *
+     * 搜索事件
      */
     public void search() {
         // 获得主类控制器
@@ -125,6 +129,16 @@ public class Handler {
      */
     public void exportExcel() {
         try {
+            if (isFirstExportExcel == 1){
+                isFirstExportExcel++;
+                Alert a = new Alert(Alert.AlertType.CONFIRMATION);
+                a.setTitle("通知");
+                a.setHeaderText("^-^");
+                a.setContentText("请从我的音乐界面单击选择一首歌然后导出它的Excel信息");
+                a.show();
+                return;
+            }
+
             // 获取被选中的音乐
             Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
             // 生成 Excel 文件
@@ -146,6 +160,16 @@ public class Handler {
      */
     public void exportPDF() {
         try {
+            if (isFirstExportPDF == 1){
+                isFirstExportPDF++;
+                Alert a = new Alert(Alert.AlertType.CONFIRMATION);
+                a.setTitle("通知");
+                a.setHeaderText("^-^");
+                a.setContentText("请从我的音乐界面单击选择一首歌然后导出它的PDF信息");
+                a.show();
+                return;
+            }
+
             // 获取被选中的音乐
             Music music = mainGUI.getMyMusicPageController().getTableView_songList().getSelectionModel().getSelectedItem();
             // 生成 PDF 文件
@@ -411,7 +435,6 @@ public class Handler {
             for (File file : selectedFile) {
                 Song song = Song.addSong(file.getAbsolutePath());
                 Music music = Song.songToMusic(song);
-
                 musicList.add(music);
             }
         }

@@ -5,7 +5,17 @@
 
 package entity;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import tool.GetMusicInfo;
+
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 保存在硬盘的歌曲的实体类
@@ -129,6 +139,51 @@ public class Song {
         music.setPath(song.getPath());
 
         return music;
+    }
+
+    public static void songToJson(List<Song> songList) {
+        Gson gson = new Gson();
+
+        try {
+            FileOutputStream fos = new FileOutputStream("D:\\LocalSong.json", false);
+            String temp = gson.toJson(songList);
+            fos.write(temp.getBytes());
+            fos.close();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    public static LinkedList<Song> jsonToSong() {
+        LinkedList<Song> songList = new LinkedList<>();
+
+        try {
+            JsonParser parser = new JsonParser();
+            JsonArray array = parser.parse(new FileReader("D:\\LocalSong.json")).getAsJsonArray();
+
+            for (int i = 0; i < array.size(); i++) {
+                Song song = new Song();
+                Tag tag = new Tag();
+
+                JsonObject object = array.get(i).getAsJsonObject();
+
+                // 设置标签信息
+                tag.setSongName(object.get("tag").getAsJsonObject().get("songName").getAsString());
+                tag.setArtist(object.get("tag").getAsJsonObject().get("artist").getAsString());
+                tag.setAlbum(object.get("tag").getAsJsonObject().get("album").getAsString());
+                tag.setLength(object.get("tag").getAsJsonObject().get("length").getAsString());
+                // 设置标签
+                song.setTag(tag);
+                song.setPath(object.get("path").getAsString());
+
+                songList.add(song);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return songList;
     }
 
     /**

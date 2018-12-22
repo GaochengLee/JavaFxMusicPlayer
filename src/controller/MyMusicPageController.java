@@ -5,6 +5,8 @@
 
 package controller;
 
+import entity.Song;
+import javafx.application.Platform;
 import mainGUI.Main;
 import entity.Music;
 import handler.ClickAction;
@@ -16,6 +18,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import service.PlayState;
+
+import java.util.List;
 
 
 /**
@@ -281,6 +285,13 @@ public class MyMusicPageController implements Controller {
 
         // 设置 TableView 鼠标点击事件
         getTableView_songList().setOnMouseClicked(new ClickAction());
+
+        Platform.runLater(() -> {
+            List<Song> songList = Song.jsonToSong();
+
+            for (Song s : songList)
+                mainGUI.getMyMusicPageController().getTableView_songList().getItems().add(Song.songToMusic(s));
+        });
     }
 
 

@@ -15,16 +15,13 @@
                <children>
                   <HBox fx:id="HBox_myMusicTop" prefHeight="75.0" prefWidth="1050.0">
                      <children>
-                        <Label fx:id="Label_myMusic" prefHeight="49.0" prefWidth="149.0" style="-fx-background-color: red;" text="我的音乐">
+                        <Label fx:id="Label_myMusic" prefHeight="49.0" prefWidth="149.0" text="我的音乐">
                            <font>
                               <Font size="36.0" />
                            </font>
                            <HBox.margin>
                               <Insets left="10.0" top="13.0" />
-                           </HBox.margin>
-                           <effect>
-                              <Reflection fraction="0.26" topOpacity="0.65" />
-                           </effect></Label>
+                           </HBox.margin></Label>
                         <Label prefHeight="75.0" prefWidth="120.0" />
                         <Button fx:id="Button_playAll" mnemonicParsing="false" onAction="#Action_playAll" prefHeight="30.0" prefWidth="100.0" text="播放全部">
                            <HBox.margin>

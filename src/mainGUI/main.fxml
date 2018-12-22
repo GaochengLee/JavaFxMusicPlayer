@@ -29,12 +29,7 @@
                   </Button>
                   <Button fx:id="Button_miniSize" mnemonicParsing="false" onAction="#Action_miniSize" prefHeight="30.0" prefWidth="30.0">
                      <HBox.margin>
-                        <Insets left="510.0" top="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button fx:id="Button_changeColor" mnemonicParsing="false" onAction="#Action_changeColor" prefHeight="30.0" prefWidth="30.0">
-                     <HBox.margin>
-                        <Insets left="20.0" top="10.0" />
+                        <Insets left="560.0" top="10.0" />
                      </HBox.margin>
                   </Button>
                   <Button fx:id="Button_exit" mnemonicParsing="false" onAction="#Action_exit" prefHeight="30.0" prefWidth="30.0">

@@ -108,12 +108,6 @@ public class MainController {
     private Button Button_miniSize;
 
     /**
-     * 主界面的更换颜色按钮
-     */
-    @FXML
-    private Button Button_changeColor;
-
-    /**
      * 主界面的退出按钮
      */
     @FXML
@@ -328,15 +322,6 @@ public class MainController {
      */
     public Button getButton_miniSize() {
         return Button_miniSize;
-    }
-
-    /**
-     * 获取主界面的换色 Button
-     *
-     * @return 返回主界面的换色 Button
-     */
-    public Button getButton_changeColor() {
-        return Button_changeColor;
     }
 
     /**
@@ -628,21 +613,6 @@ public class MainController {
     }
 
     /**
-     * 单击了左上角的 “ 换肤 ” 按钮后的事件处理
-     *
-     * @param e 事件
-     */
-    @FXML
-    private void Action_changeColor(ActionEvent e) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-
-        alert.setTitle("通知");
-        alert.setHeaderText("^-^");
-        alert.setContentText("换色功能还处于开发阶段");
-        alert.showAndWait();
-    }
-
-    /**
      * 单击了右下角的“播放列表”按钮后的事件处理
      *
      * @param e 事件
@@ -857,7 +827,6 @@ public class MainController {
          */
         Button_search.getStyleClass().set(0, "buttonSearch");
         Button_miniSize.getStyleClass().set(0, "buttonMiniSize");
-        Button_changeColor.getStyleClass().set(0, "buttonChangeColor");
         Button_playList.getStyleClass().set(0, "playList");
         Button_exit.getStyleClass().set(0, "buttonExit");
         Button_last.getStyleClass().set(0, "buttonPre");

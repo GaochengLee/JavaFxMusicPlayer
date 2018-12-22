@@ -8,12 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e0050917-3fbe-4552-8810-685cff911af7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LeftMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeftMusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/leftMusic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftMusic/leftMusic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/chatRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/chatRoom.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/leftMusicList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/leftMusicList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,9 +59,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="678" />
-          <entry key="JAVA" value="8890" />
+          <entry key="JAVA" value="8907" />
           <entry key="Markdown" value="22" />
-          <entry key="PLAIN_TEXT" value="208" />
+          <entry key="PLAIN_TEXT" value="247" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
@@ -98,11 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/LeftMusicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="366" column="28" selection-start-line="366" selection-start-column="28" selection-end-line="366" selection-end-column="28" />
+            <state relative-caret-position="-90">
+              <caret line="363" column="19" selection-start-line="363" selection-start-column="19" selection-end-line="363" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,21 +105,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#339#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/MyMusicPageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="-3706">
               <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
@@ -140,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/leftMusic/leftMusic.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1043">
+            <state relative-caret-position="1955">
               <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
             </state>
           </provider>
@@ -258,20 +240,7 @@
               <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tetris" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tetris" type="462c0819:PsiDirectoryNode" />
-              <item name="Tetromino.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="mainGUI" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,7 +252,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545479955605" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545480175016" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/MyTetris" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -362,7 +331,7 @@
       <workItem from="1545403218748" duration="10964000" />
       <workItem from="1545442824341" duration="1293000" />
       <workItem from="1545451068151" duration="3571000" />
-      <workItem from="1545455279012" duration="17033000" />
+      <workItem from="1545455279012" duration="17287000" />
     </task>
     <task id="LOCAL-00001" summary="改变路径">
       <created>1545368422973</created>
@@ -455,15 +424,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545477598006</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="添加了一些图片，并加上了小游戏（不是自己写），但游戏退出主程序也会退出">
+      <created>1545480040335</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545480040335</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43904000" />
+    <option name="totallyTimeSpent" value="44158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.16151386" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16897655" />
@@ -549,7 +524,8 @@
     <MESSAGE value="服务器传输正确的文件" />
     <MESSAGE value="换了图表 界面更好看了一点" />
     <MESSAGE value=" 添加了聊天室功能" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 添加了聊天室功能" />
+    <MESSAGE value="添加了一些图片，并加上了小游戏（不是自己写），但游戏退出主程序也会退出" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了一些图片，并加上了小游戏（不是自己写），但游戏退出主程序也会退出" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/controller/PlayListController.java">
@@ -766,23 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#339#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/MyMusicPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/Compressed/MyTetris/src/com/fry/tetris/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -848,13 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="142" column="14" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainGUI/leftMusicList.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -862,13 +814,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/leftMusic/leftMusic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1043">
-          <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/com/fry/tetris/Tetromino.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -891,13 +836,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/LeftMusicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="366" column="28" selection-start-line="366" selection-start-column="28" selection-end-line="366" selection-end-column="28" />
+        <state relative-caret-position="-90">
+          <caret line="363" column="19" selection-start-line="363" selection-start-column="19" selection-end-line="363" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/MyMusicPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3706">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="142" column="14" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/leftMusic/leftMusic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
         </state>
       </provider>
     </entry>

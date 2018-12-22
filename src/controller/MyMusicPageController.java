@@ -7,6 +7,8 @@ package controller;
 
 import entity.Song;
 import javafx.application.Platform;
+import javafx.beans.value.ObservableValue;
+import javafx.util.Callback;
 import mainGUI.Main;
 import entity.Music;
 import handler.ClickAction;
@@ -98,7 +100,7 @@ public class MyMusicPageController implements Controller {
      * 我的音乐界面的音乐ID表列
      */
     @FXML
-    private TableColumn<Music, Integer> TableColumn_musicID;
+    private TableColumn<Music, String> TableColumn_musicID;
 
     /**
      * 我的音乐界面的歌曲名字表列
@@ -213,7 +215,7 @@ public class MyMusicPageController implements Controller {
      *
      * @return 返回我的音乐的 TableView 的一列
      */
-    public TableColumn<Music, Integer> getTableColumn_musicID() {
+    public TableColumn<Music, String> getTableColumn_musicID() {
         return TableColumn_musicID;
     }
 
@@ -278,6 +280,22 @@ public class MyMusicPageController implements Controller {
 
         // 将每一个 TableColumn 都绑定了属性值协议
         // 当 TableView 更新时，每一列也能够更新
+        TableColumn_musicID.setCellFactory((col) -> {
+            TableCell<Music, String> cell = new TableCell<>() {
+                @Override
+                protected void updateItem(String item, boolean empty) {
+                    super.updateItem(item, empty);
+                    this.setText(null);
+                    this.setGraphic(null);
+
+                    if (!empty) {
+                        int rowIndex = this.getIndex() + 1;
+                        this.setText(String.valueOf(rowIndex));
+                    }
+                }
+            };
+            return cell;
+        });
         TableColumn_songName.setCellValueFactory(new PropertyValueFactory<>("musicTitle"));
         TableColumn_singer.setCellValueFactory(new PropertyValueFactory<>("musicSinger"));
         TableColumn_album.setCellValueFactory(new PropertyValueFactory<>("albumName"));

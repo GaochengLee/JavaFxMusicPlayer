@@ -5,6 +5,8 @@
 
 package controller;
 
+import game.com.fry.tetris.Tetris;
+import javafx.scene.control.Alert;
 import mainGUI.ChatRoomGUI;
 import mainGUI.Main;
 import mainGUI.PercussionGUI;
@@ -142,6 +144,8 @@ public class LeftMusicController {
      */
     @FXML
     private Label Label_singer;
+
+    private static int isFirstgame = 1;
 
     /*
      * 各种 get 方法，用于获取相应的对象
@@ -350,14 +354,18 @@ public class LeftMusicController {
      */
     @FXML
     private void Action_game() {
+        if (isFirstgame == 1) {
+            isFirstgame++;
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setTitle("通知");
+            alert.setHeaderText("^-^");
+            alert.setContentText("你需要再点一次才能启动游戏\n如果游戏关闭整个音乐播放器也会关闭，问题尚未解决");
+            alert.show();
+            return;
+        }
         Platform.runLater(() -> {
-
+            Tetris.main(null);
         });
-//        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-//        alert.setTitle("通知");
-//        alert.setHeaderText("^-^");
-//        alert.setContentText("小游戏功能尚在开发");
-//        alert.showAndWait();
     }
 
     /**
@@ -395,6 +403,11 @@ public class LeftMusicController {
      * 初始化 左侧列表的样式层叠表
      */
     private void __initCSS__() {
+        Button_chatRoom.getStyleClass().set(0, "Button_chatRoom");
+        Button_game.getStyleClass().set(0, "Button_game");
+        Button_percussion.getStyleClass().set(0, "Button_percussion");
+        Button_exportExcel.getStyleClass().set(0, "Button_exportExcel");
+        Button_exportPDF.getStyleClass().set(0, "Button_exportPDF");
 
         // 初始化歌曲封面图片
         File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\JavaFxMusicPlayer\\src\\resource\\initial.jpg");

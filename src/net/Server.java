@@ -128,7 +128,8 @@ public class Server extends Thread {
                             " - " + song.getTag().getSongName() + ".mp3"));
                 }
                 if (split[1].equals("message")) {
-                    String name = split[2];
+                    String name = clientSocket.getInetAddress().getHostAddress() + ":" +
+                            clientSocket.getPort();
                     String message = split[3];
 
                     System.out.println("Message [from client " +

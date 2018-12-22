@@ -40,46 +40,80 @@
 }
 
 #Button_percussion {
-    -fx-background-color: #ECECEC,
+    /*-fx-background-color: #ECECEC,
     linear-gradient(#ECECEC 50%, #D5D5D5 100%),
     radial-gradient(center 50% -40%, radius 200%, #ECECEC 45%, #D5D5D5 50%);
     -fx-background-radius: 30;
     -fx-background-insets: 0, 1, 1;
-    -fx-text-fill: black;
+    -fx-text-fill: black;*/
+    -fx-background-image: url(music.png);
+    -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
 }
 
 #Button_percussion:hover {
+    -fx-background-image: url(musicDark.png);
+    -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 5, 0.0, 0, 0);
 }
 
 #Button_chatRoom {
-    -fx-background-color: #ECECEC,
+    /*-fx-background-color: #ECECEC,
     linear-gradient(#ECECEC 50%, #D5D5D5 100%),
     radial-gradient(center 50% -40%, radius 200%, #ECECEC 45%, #D5D5D5 50%);
     -fx-background-radius: 30;
     -fx-background-insets: 0, 1, 1;
-    -fx-text-fill: black;
+    -fx-text-fill: black;*/
+    -fx-background-image: url(chat.png);
+    -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
 }
 
 #Button_chatRoom:hover {
+    -fx-background-image: url(chatDark.png);
+    -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 5, 0.0, 0, 0);
 }
 
 #Button_game {
-    -fx-background-color: #ECECEC,
+    /*-fx-background-color: #ECECEC,
     linear-gradient(#ECECEC 50%, #D5D5D5 100%),
     radial-gradient(center 50% -40%, radius 200%, #ECECEC 45%, #D5D5D5 50%);
     -fx-background-radius: 30;
     -fx-background-insets: 0, 1, 1;
-    -fx-text-fill: black;
+    -fx-text-fill: black;*/
+    -fx-background-image: url(game.png);
+    -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
 }
 
 #Button_game:hover {
+    -fx-background-image: url(gameDark.png);
+    -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 5, 0.0, 0, 0);
 }
 
+#Button_exportExcel {
+    -fx-background-image: url(excelFile.png);
+    -fx-background-size: 48px;
+    -fx-effect: DropShadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+}
 
+#Button_exportExcel:hover {
+    -fx-background-image: url(excelFileDark.png);
+    -fx-background-size: 48px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 5, 0.0, 0, 0);
+}
+
+#Button_exportPDF {
+    -fx-background-image: url(PDFFile.png);
+    -fx-background-size: 48px;
+    -fx-effect: DropShadow(three-pass-box, rgba(0, 0, 0, 0.6), 3, 0.0, 0, 1);
+}
+
+#Button_exportPDF:hover {
+    -fx-background-image: url(PDFFileDark.png);
+    -fx-background-size: 48px;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 5, 0.0, 0, 0);
+}
 

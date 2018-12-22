@@ -20,38 +20,37 @@
          <children>
             <VBox fx:id="VBox_main" prefHeight="470.0" prefWidth="230.0">
                <children>
-                  <VBox fx:id="VBox_top" prefHeight="150.0" prefWidth="230.0">
-                     <children>
-                        <ToolBar prefHeight="50.0" prefWidth="200.0">
-                          <items>
-                              <Button fx:id="Button_importMusic" mnemonicParsing="false" onAction="#Action_addMusic" prefHeight="25.0" prefWidth="80.0" text="导入音乐" />
-                              <Button fx:id="Button_importFolder" mnemonicParsing="false" onAction="#Action_addMusicFolder" prefHeight="25.0" prefWidth="80.0" text="导入文件夹" />
-                          </items>
-                           <VBox.margin>
-                              <Insets />
-                           </VBox.margin>
-                           <padding>
-                              <Insets left="35.0" />
-                           </padding>
-                        </ToolBar>
-                        <ToolBar prefHeight="50.0" prefWidth="200.0">
-                          <items>
-                              <Button fx:id="Button_game" mnemonicParsing="false" onAction="#Action_game" prefHeight="25.0" prefWidth="55.0" text="小游戏" />
-                              <Button fx:id="Button_chatRoom" mnemonicParsing="false" onAction="#Action_chatRoom" prefHeight="25.0" prefWidth="55.0" text="聊天室" />
-                              <Button fx:id="Button_percussion" mnemonicParsing="false" onAction="#Action_percussion" prefHeight="25.0" prefWidth="55.0" text="敲击乐" />
-                          </items>
-                           <padding>
-                              <Insets left="30.0" />
-                           </padding>
-                        </ToolBar>
-                        <ToolBar prefHeight="50.0" prefWidth="200.0">
-                          <items>
-                            <Button fx:id="Button_exportExcel" mnemonicParsing="false" onAction="#Action_exportExcel" text="导出Excel" />
-                              <Button fx:id="Button_exportPDF" mnemonicParsing="false" onAction="#Action_exportPDF" text="导出歌曲PDF" />
-                          </items>
-                        </ToolBar>
-                     </children>
-                  </VBox>
+                  <ToolBar minHeight="55.0" prefHeight="70.0" prefWidth="200.0">
+                    <items>
+                        <Button fx:id="Button_importMusic" mnemonicParsing="false" onAction="#Action_addMusic" prefHeight="50.0" prefWidth="80.0" text="导入音乐" />
+                        <Button fx:id="Button_importFolder" mnemonicParsing="false" onAction="#Action_addMusicFolder" prefHeight="50.0" prefWidth="80.0" text="导入文件夹" />
+                    </items>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="35.0" />
+                     </padding>
+                  </ToolBar>
+                  <ToolBar prefHeight="80.0" prefWidth="200.0">
+                    <items>
+                        <Button fx:id="Button_game" mnemonicParsing="false" onAction="#Action_game" prefHeight="50.0" prefWidth="50.0" />
+                        <Button fx:id="Button_chatRoom" mnemonicParsing="false" onAction="#Action_chatRoom" prefHeight="50.0" prefWidth="50.0" />
+                        <Button fx:id="Button_percussion" mnemonicParsing="false" onAction="#Action_percussion" prefHeight="50.0" prefWidth="50.0" />
+                    </items>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </ToolBar>
+                  <ToolBar prefHeight="60.0" prefWidth="200.0">
+                    <items>
+                      <Button fx:id="Button_exportExcel" mnemonicParsing="false" onAction="#Action_exportExcel" prefHeight="48.0" prefWidth="48.0" />
+                        <Button fx:id="Button_exportPDF" mnemonicParsing="false" onAction="#Action_exportPDF" prefHeight="48.0" prefWidth="48.0" />
+                    </items>
+                     <padding>
+                        <Insets left="55.0" />
+                     </padding>
+                  </ToolBar>
                </children>
             </VBox>
             <AnchorPane fx:id="Anchor_bottom" maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="230.0">

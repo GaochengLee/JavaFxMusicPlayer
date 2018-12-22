@@ -3,12 +3,15 @@ package mainGUI;
 import controller.MainController;
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextArea;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
@@ -17,26 +20,45 @@ import java.io.*;
 import java.net.Socket;
 
 public class ChatRoomGUI extends Application {
-
+    /**
+     *
+     */
     @FXML
     private TextArea TextArea_sendMessage;
-
+    /**
+     *
+     */
     @FXML
     private TextArea TextArea_receiveMessage;
-
+    /**
+     *
+     */
     @FXML
     private Button Button_sendButton;
-
-    @FXML
-    private MenuBar MenuBar_chatRoom;
-
-    private static Socket connection = MainController.getSocket();
+    /**
+     *
+     */
+    private static Socket connection;
+    /**
+     *
+     */
     private static PrintStream serverOut;
+    /**
+     *
+     */
     private static BufferedReader serverIn;
+    /**
+     *
+     */
     private static TextArea textAreaOut;
+    /**
+     *
+     */
     private static TextArea textAreaIn;
 
-
+    /**
+     *
+     */
     @FXML
     private void Action_send() {
         String temp = TextArea_sendMessage.getText();
@@ -48,10 +70,19 @@ public class ChatRoomGUI extends Application {
         }
     }
 
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }
 
+    /**
+     *
+     * @param primaryStage
+     * @throws Exception
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("chatRoom.fxml"));
@@ -62,6 +93,7 @@ public class ChatRoomGUI extends Application {
         HBox hBox = (HBox) pane.getBottom();
         textAreaOut = (TextArea) hBox.getChildren().get(0);
 
+
         Scene scene = new Scene(pane);
 
         primaryStage.setScene(scene);
@@ -70,6 +102,7 @@ public class ChatRoomGUI extends Application {
         Platform.runLater(() -> {
             try {
                 Thread thread = new Thread(new RemoteReader());
+                connection = new Socket("127.0.0.1", 5432);
                 serverIn = new BufferedReader(new InputStreamReader(connection.getInputStream()));
                 serverOut = new PrintStream(connection.getOutputStream());
 
@@ -81,6 +114,9 @@ public class ChatRoomGUI extends Application {
         });
     }
 
+    /**
+     *
+     */
     private class RemoteReader implements Runnable {
         @Override
         public void run() {

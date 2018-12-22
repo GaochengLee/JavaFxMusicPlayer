@@ -390,15 +390,9 @@ public class LeftMusicController {
      * 初始化 左侧列表的样式层叠表
      */
     private void __initCSS__() {
-//        Button_importMusic.getStyleClass().set(0, "button--nina");
-//        Button_importMusic.getStyleClass().remove(0);
-//        Button_importFolder.getStyleClass().remove(0);
-//        Button_percussion.getStyleClass().remove(0);
-//        Button_chatRoom.getStyleClass().remove(0);
-//        Button_game.getStyleClass().remove(0);
 
         // 初始化歌曲封面图片
-        File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\LearnJavaFx\\src\\initial.jpg");
+        File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\JavaFxMusicPlayer\\src\\resource\\initial.jpg");
         Image image = new Image(file.toURI().toString());
         ImageView_cover.imageProperty().setValue(image);
     }

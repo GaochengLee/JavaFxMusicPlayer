@@ -141,30 +141,49 @@ public class Song {
         return music;
     }
 
+    /**
+     * 将音乐文件转化为json
+     *
+     * @param songList 要转化的音乐表
+     */
     public static void songToJson(List<Song> songList) {
+        // 声明 Gson
         Gson gson = new Gson();
 
         try {
+            // 文件输出流
             FileOutputStream fos = new FileOutputStream("D:\\LocalSong.json", false);
+            // 转化为json
             String temp = gson.toJson(songList);
+            // 将数据写入文件中
             fos.write(temp.getBytes());
+            // 关闭输入流
             fos.close();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+    /**
+     * 将json解析为音乐文件
+     *
+     * @return 音乐文件链表
+     */
     public static LinkedList<Song> jsonToSong() {
         LinkedList<Song> songList = new LinkedList<>();
 
         try {
+            // json 解析器
             JsonParser parser = new JsonParser();
+            // json 数组
             JsonArray array = parser.parse(new FileReader("D:\\LocalSong.json")).getAsJsonArray();
 
+            // 将数组中的信息解析
             for (int i = 0; i < array.size(); i++) {
                 Song song = new Song();
                 Tag tag = new Tag();
 
+                // json 对象
                 JsonObject object = array.get(i).getAsJsonObject();
 
                 // 设置标签信息
@@ -176,6 +195,7 @@ public class Song {
                 song.setTag(tag);
                 song.setPath(object.get("path").getAsString());
 
+                // 添加到链表中
                 songList.add(song);
             }
 

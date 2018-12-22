@@ -50,29 +50,29 @@ public class Handler {
      * 获取 Main 类
      */
     private static Main mainGUI;
-
     /**
      * 获取当前播放器播放状态
      */
     private static PlayState playState = PlayState.getPlayState();
-
     /**
      * 设置播放列表弹出状态为：不弹出
      */
     private boolean listOn = false;
-
     /**
      * 设置一个字符串属性
      */
     private static StringProperty message = new SimpleStringProperty();
-
     /**
      * 获取一个播放器
      */
     private MusicMediaPlayer player;
-
+    /**
+     * 判断是否为第一次生成 Excel
+     */
     private static int isFirstExportExcel = 1;
-
+    /**
+     * 判断是否为第一次生成 PDF
+     */
     private static int isFirstExportPDF = 1;
 
 
@@ -129,6 +129,9 @@ public class Handler {
      */
     public void exportExcel() {
         try {
+            /*
+             * 如果是第一次生成 Excel，不会生成 Excel 文件而是用一个对话框提示
+             */
             if (isFirstExportExcel == 1){
                 isFirstExportExcel++;
                 Alert a = new Alert(Alert.AlertType.CONFIRMATION);
@@ -160,6 +163,9 @@ public class Handler {
      */
     public void exportPDF() {
         try {
+            /*
+             * 如果是第一次生成 PDF，不会生成 PDF 文件而是用一个对话框提示
+             */
             if (isFirstExportPDF == 1){
                 isFirstExportPDF++;
                 Alert a = new Alert(Alert.AlertType.CONFIRMATION);
@@ -210,8 +216,6 @@ public class Handler {
         // 开始播放歌曲
         player = new MusicMediaPlayer(index);
         player.start();
-
-        System.out.println(playState.getCurrentIndex());
 
         // 将字符串协议和主界面的播放列表内歌曲数目绑定，
         // 每次播放都会更新
@@ -385,10 +389,14 @@ public class Handler {
         playState.getCurrent_songList().addAll(mainGUI.getMyMusicPageController().getTableView_songList().getItems());
         // 获得播放器然后播放
 
+        // 获得第一首歌
         Music firstMusic = mainGUI.getMyMusicPageController().getTableView_songList().getItems().get(0);
+        // 获得扩展信息
         ExtendedInfo info = GetMusicInfo.getExtendedInfo(firstMusic.getPath());
 
+        // 设置当前播放的歌曲
         playState.setCurrentMusic(firstMusic);
+        // 开始播放
         MusicMediaPlayer player = new MusicMediaPlayer(firstMusic);
         player.start();
 
@@ -398,6 +406,7 @@ public class Handler {
         message.set(String.valueOf(mainGUI.getPlayListController().getTableView_songList().getItems().size()));
         mainGUI.getMainController().getLabel_playList().textProperty().bind(message);
 
+        // 刷新状态栏
         refreshStatusBar(info);
     }
 
@@ -469,6 +478,7 @@ public class Handler {
 
         // 生成一个文件夹选择器
         DirectoryChooser folderChooser = new DirectoryChooser();
+        // 设置文件夹选择器的显示背景
         File selectedFile = folderChooser.showDialog(Main.mainStage);
         List<Music> musicList = new ArrayList<>();
 
@@ -478,6 +488,7 @@ public class Handler {
             ArrayList<File> fileList = new ArrayList<>();
             iterationFolder(selectedFile, fileList);
 
+            // 将音乐文件添加到链表中
             for (File file : fileList) {
                 Song song = Song.addSong(file.getAbsolutePath());
                 Music music = Song.songToMusic(song);
@@ -626,6 +637,7 @@ public class Handler {
         // 关闭文件输出流
         fos.close();
 
+        // 说明文件的保存位置
         Platform.runLater(() -> {
             if (fileName.endsWith("json")) return;
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
@@ -633,15 +645,6 @@ public class Handler {
             alert.setContentText("文件已保存至：" + filePath);
             alert.show();
         });
-    }
-
-    /**
-     * @param socket
-     * @param savePath
-     * @throws IOException
-     */
-    public static void receiveFile(Socket socket, String savePath) throws IOException {
-        //todo: 能够将文件保存目录确定的方法 （暂未完成）
     }
 
     /**

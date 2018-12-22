@@ -693,8 +693,8 @@ public class MainController {
         // 对左上角区域的 Label 设置一个鼠标单击处理器
         // 鼠标单击这个区域会返回主界面
         getLabel_page().setOnMouseClicked(event -> {
-            // 如果当前界面不为空，将当前界面设置为主界面
-            if (handler.isListOn()) {
+            // 如果当前界面不为主界面，将当前界面设置为主界面
+            if (mainGUI.getMainPane().getCenter() != mainGUI.getMyMusicPage()) {
                 // 设置主界面的中央为空
                 mainBorder.setCenter(null);
                 // 设置主界面的中央为我的音乐界面

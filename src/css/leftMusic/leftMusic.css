@@ -81,10 +81,5 @@
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 5, 0.0, 0, 0);
 }
 
-#button--nina {
-    -fx-padding: 0 2 em;
-    -fx-background-color: #7986cb;
-    -fx-border-color: #fff;
-}
 
 

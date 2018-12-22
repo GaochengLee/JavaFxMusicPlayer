@@ -113,7 +113,6 @@ public class PlayState {
 
         // 如果是第一次出创建 PlayState
         if (playState == null) {
-            System.out.println("new PlayState create");
             playState = new PlayState();
             // 初始化状态
             playState.currentState = PAUSE;

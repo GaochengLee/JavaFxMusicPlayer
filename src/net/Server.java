@@ -111,14 +111,18 @@ public class Server extends Thread {
                 }
                 // 如果是发送命令
                 if (split[1].equals("send")) {
-                    System.out.println(split[2]);
+                    System.out.println(split[3]);
 
                     // 获取根据搜索关键字发送过来的信息，生成一个链表来存放服务器端搜索到的信息
                     LinkedList<Song> songList = getByKeyword(split[2], list);
 
+                    Song song = getSong(split[3], split[2] , songList);
+                    System.out.println(song);
+
+
                     // 将服务器端搜索到的文件发送出去
-                    sendFile(clientSocket, new File(PATH + songList.get(0).getTag().getArtist() +
-                            " - " + songList.get(0).getTag().getSongName() + ".mp3"));
+                    sendFile(clientSocket, new File(song.getPath() + "\\" + song.getTag().getArtist() +
+                            " - " + song.getTag().getSongName() + ".mp3"));
                 }
             }
         } catch (Exception e) {
@@ -266,6 +270,14 @@ public class Server extends Thread {
         }
 //        System.out.println(newList.size());
         return newList;
+    }
+
+    private static Song getSong(String singer, String songName, List<Song> songList) {
+        for (Song s : songList){
+            if (s.getTag().getArtist().equals(singer) && s.getTag().getSongName().equals(songName))
+                return s;
+        }
+        return null;
     }
 
     /**

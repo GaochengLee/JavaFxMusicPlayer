@@ -127,7 +127,7 @@ public class ClickAction implements EventHandler<MouseEvent> {
                         // 确认选择的音乐
                         Music music = searchController.getTableView_songList().getSelectionModel().getSelectedItem();
                         // 向服务器发送传输文件请求
-                        MainController.getServerOut().println("# send " + music.getMusicTitle());
+                        MainController.getServerOut().println("# send " + music.getMusicTitle() + " " + music.getMusicSinger());
                         // 启动线程来接受文件
                         Thread thread = new Thread(new Runnable() {
                             @Override
@@ -250,8 +250,8 @@ public class ClickAction implements EventHandler<MouseEvent> {
                 // 刷新播放列表
                 Handler.refreshPlayList();
 
-                System.out.println(playState.getCurrentMusic());
-                System.out.println(deleteMusic);
+                // 如果移除后播放列表里没有歌曲，则停止播放
+                // 否则，播放下一首歌曲
                 if (playListController.getTableView_songList().getItems().size() == 0)
                     new MusicMediaPlayer().stop();
                 else if (playState.getCurrentMusic() == deleteMusic){
@@ -293,7 +293,7 @@ public class ClickAction implements EventHandler<MouseEvent> {
                 // 确认选择的音乐
                 Music music = searchController.getTableView_songList().getSelectionModel().getSelectedItem();
                 // 向服务器发送传输文件请求
-                MainController.getServerOut().println("# send " + music.getMusicTitle());
+                MainController.getServerOut().println("# send " + music.getMusicTitle() + " " + music.getMusicSinger());
                 // 启动线程来接受文件
                 Thread thread = new Thread(new Runnable() {
                     @Override

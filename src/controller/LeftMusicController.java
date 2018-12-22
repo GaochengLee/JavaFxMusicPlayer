@@ -361,11 +361,11 @@ public class LeftMusicController {
             alert.setHeaderText("^-^");
             alert.setContentText("你需要再点一次才能启动游戏\n如果游戏关闭整个音乐播放器也会关闭，问题尚未解决");
             alert.show();
-            return;
+            //return;
         }
-        Platform.runLater(() -> {
-            Tetris.main(null);
-        });
+//        Platform.runLater(() -> {
+//            Tetris.main(null);
+//        });
     }
 
     /**

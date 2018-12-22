@@ -42,9 +42,9 @@
                                     <Insets left="20.0" />
                                  </padding>
                               </Label>
-                              <Button fx:id="Button_clearAll" mnemonicParsing="false" onAction="#Action_clearAll" prefHeight="40.0" prefWidth="60.0">
+                              <Button fx:id="Button_clearAll" mnemonicParsing="false" onAction="#Action_clearAll" prefHeight="40.0" prefWidth="70.0" text="清除全部">
                                  <HBox.margin>
-                                    <Insets left="880.0" />
+                                    <Insets left="870.0" />
                                  </HBox.margin>
                               </Button>
                            </children>

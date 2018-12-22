@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 18-12-22 下午10:48.
+ * @author 李高丞
+ */
+
 package handler;
 
 
@@ -232,10 +237,19 @@ public class ClickAction implements EventHandler<MouseEvent> {
             playNext.setOnAction(event -> {
                 // 获得选中的音乐
                 Music nextMusic = myMusicPageController.getTableView_songList().getSelectionModel().getSelectedItem();
+                // 如果选择音乐是当前正在播放的音乐，则什么事情都不做
+                if (nextMusic == playState.getCurrentMusic()) return;
+
                 // 添加到播放列表中
-                playListController.getTableView_songList().getItems().add(playState.getCurrentIndex() + 1, nextMusic);
-                // 添加到播放状态的当前播放音乐列表中
-                playState.getCurrent_songList().add(playState.getCurrentIndex() + 1, nextMusic);
+                if (playListController.getTableView_songList().getItems().size() != 0) {
+                    playListController.getTableView_songList().getItems().add(playState.getCurrentIndex() + 1, nextMusic);
+                    // 添加到播放状态的当前播放音乐列表中
+                    playState.getCurrent_songList().add(playState.getCurrentIndex() + 1, nextMusic);
+                } else {
+                    playListController.getTableView_songList().getItems().add(nextMusic);
+
+                    playState.getCurrent_songList().add(nextMusic);
+                }
                 // 刷新播放列表
                 Handler.refreshPlayList();
             });
@@ -254,7 +268,7 @@ public class ClickAction implements EventHandler<MouseEvent> {
                 // 否则，播放下一首歌曲
                 if (playListController.getTableView_songList().getItems().size() == 0)
                     new MusicMediaPlayer().stop();
-                else if (playState.getCurrentMusic() == deleteMusic){
+                else if (playState.getCurrentMusic() == deleteMusic) {
                     handler.nextPlay();
                 }
 

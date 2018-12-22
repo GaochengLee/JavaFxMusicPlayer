@@ -286,6 +286,14 @@ public class Server extends Thread {
         return newList;
     }
 
+    /**
+     * 从一个表中获得一个特定的歌曲类
+     *
+     * @param singer   歌手名字
+     * @param songName 歌名
+     * @param songList 要查询的表
+     * @return 返回不为空则存在
+     */
     private static Song getSong(String singer, String songName, List<Song> songList) {
         for (Song s : songList) {
             if (s.getTag().getArtist().equals(singer) && s.getTag().getSongName().equals(songName))
@@ -322,6 +330,12 @@ public class Server extends Thread {
         }
     }
 
+    /**
+     * 把信息发送给所有的客户端
+     *
+     * @param message 要发送的信息
+     * @param name    发送信息的名字
+     */
     private static void sendToEveryClient(String message, String name) {
         Iterator<PrintWriter> it = clientOutputStream.iterator();
         while (it.hasNext()) {

@@ -265,13 +265,6 @@ public class MyMusicPageController implements Controller {
     }
 
     /**
-     * 初始化 MyMusicPageController
-     */
-    public void __init__() {
-
-    }
-
-    /**
      * 初始化 MyMusicPageController 的数据
      * 将 TableView 的每一列都绑定协议
      * 当添加歌曲时 能够成功更新每一列的数据
@@ -280,6 +273,8 @@ public class MyMusicPageController implements Controller {
 
         // 将每一个 TableColumn 都绑定了属性值协议
         // 当 TableView 更新时，每一列也能够更新
+
+        // 设置序号
         TableColumn_musicID.setCellFactory((col) -> {
             TableCell<Music, String> cell = new TableCell<>() {
                 @Override
@@ -296,6 +291,7 @@ public class MyMusicPageController implements Controller {
             };
             return cell;
         });
+        // 设置音乐类
         TableColumn_songName.setCellValueFactory(new PropertyValueFactory<>("musicTitle"));
         TableColumn_singer.setCellValueFactory(new PropertyValueFactory<>("musicSinger"));
         TableColumn_album.setCellValueFactory(new PropertyValueFactory<>("albumName"));
@@ -304,6 +300,7 @@ public class MyMusicPageController implements Controller {
         // 设置 TableView 鼠标点击事件
         getTableView_songList().setOnMouseClicked(new ClickAction());
 
+        // 等启动完成后将存在本地的音乐添加到我的音乐列表中
         Platform.runLater(() -> {
             List<Song> songList = Song.jsonToSong();
 

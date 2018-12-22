@@ -1,0 +1,62 @@
+/*https://blog.csdn.net/moakun/article/details/78638524*/
+#Button_playAll {
+    -fx-text-fill: #bdbdbd;
+    -fx-background-color: #e91e63;
+}
+
+#Button_playAll:hover {
+    -fx-text-fill: white;
+    -fx-background-color: #f8bbd0;
+    -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 8, 0.0, 0, 0);
+}
+
+#Button_playAll:pressed {
+    -fx-text-fill: white;
+    -fx-background-color: #f8bbd0;
+}
+
+#Button_playAll:focused {
+    -fx-text-fill: white;
+    -fx-background-color: #f8bbd0;
+}
+
+.table-view {
+    -fx-background-color: #c2185b;
+}
+
+.column-header-background {
+    -fx-background-color: black;
+}
+
+.table-row-cell  {
+    -fx-text-fill: #c0c0c0;
+    -fx-background-color: #EC69A0;
+}
+
+.table-row-cell:hover {
+    -fx-effect: dropshadow(three-pass-box, -fx-shadow-highlight-color, 8, 0.0, 0, 0);
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #4d4e53;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell {
+    -fx-background-insets: 0;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-row-cell .table-cell {
+    -fx-border-width: 0px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #AC1552;
+}
+

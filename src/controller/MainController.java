@@ -845,10 +845,6 @@ public class MainController {
             socket = new Socket("127.0.0.1", 5432);
             serverOut = new PrintStream(socket.getOutputStream());
 
-            //serverIn = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            //Thread thread = new Thread(new RemoteReader());
-            //thread.start();
-
         } catch (IOException e) {
             // 当无法连接上服务器时，弹出一个对话框来提示
             Alert alert = new Alert(Alert.AlertType.INFORMATION);

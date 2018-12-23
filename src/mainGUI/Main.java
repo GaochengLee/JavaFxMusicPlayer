@@ -194,7 +194,7 @@ public class Main extends Application {
         // todo：样式层叠表没有写好
         scene.getStylesheets().add("css/main/Main.css");
         scene.getStylesheets().add("css/leftmusic/LeftMusic.css");
-        scene.getStylesheets().add("css/mymusicpage/MyMusicPage.css");
+        scene.getStylesheets().add("css/mymusicpage/MyMusicPage12.css");
 
         // 删除主舞台的系统自带窗体
         primaryStage.initStyle(StageStyle.UNDECORATED);

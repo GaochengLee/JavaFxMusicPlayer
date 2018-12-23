@@ -842,7 +842,7 @@ public class MainController {
     private void __initNetWork__() {
         try {
             // 链接到的服务器地址和端口
-            socket = new Socket("127.0.0.1", 5432);
+            socket = new Socket("172.27.83.210", 5432);
             serverOut = new PrintStream(socket.getOutputStream());
 
         } catch (IOException e) {

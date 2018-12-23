@@ -5,6 +5,7 @@
 
 package mainGUI;
 
+import controller.MainController;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -114,7 +115,7 @@ public class ChatRoomGUI extends Application {
                 // 启动线程
                 Thread thread = new Thread(new RemoteReader());
                 // 声明网络套接字
-                connection = new Socket("127.0.0.1", 5432);
+                connection = MainController.getSocket();
                 // 获取输入流和输出流
                 serverIn = new BufferedReader(new InputStreamReader(connection.getInputStream()));
                 serverOut = new PrintStream(connection.getOutputStream());

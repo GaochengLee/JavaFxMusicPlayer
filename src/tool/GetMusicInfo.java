@@ -127,7 +127,7 @@ public class GetMusicInfo {
      * @param path MP3 文件所在的位置
      */
     public static void getMP3Image(String path) {
-        //Image image;
+        //image image;
         try {
             // 获取 MP3 文件
             File sourceFile = new File(path);

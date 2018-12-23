@@ -410,7 +410,7 @@ public class LeftMusicController {
         Button_exportPDF.getStyleClass().set(0, "Button_exportPDF");
 
         // 初始化歌曲封面图片
-        File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\JavaFxMusicPlayer\\src\\resource\\initial.jpg");
+        File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\JavaFxMusicPlayer\\src\\resource\\Initial.jpg");
         Image image = new Image(file.toURI().toString());
         ImageView_cover.imageProperty().setValue(image);
     }

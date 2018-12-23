@@ -89,7 +89,7 @@ public class ChatRoomGUI extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         // 从 fxml 中读取 gui
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("chatRoom.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("ChatRoom.fxml"));
         // 获取主面板
         BorderPane pane = loader.load();
 

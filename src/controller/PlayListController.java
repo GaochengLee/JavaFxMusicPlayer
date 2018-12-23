@@ -196,7 +196,7 @@ public class PlayListController implements Controller {
 
         // 将状态初始化
         if (PlayState.getPlayState() != null) {
-            File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\LearnJavaFx\\src\\initial.jpg");
+            File file = new File("C:\\Users\\hasee\\Documents\\JavaCode\\LearnJavaFx\\src\\Initial.jpg");
             Image image = new Image(file.toURI().toString());
 
             mainGUI.getLeftMusicController().getImageView_cover().imageProperty().setValue(image);

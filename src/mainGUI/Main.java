@@ -111,7 +111,7 @@ public class Main extends Application {
         mainStage = primaryStage;
 
         // 从 fxml 文件中加载 main 类
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("main.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Main.fxml"));
         mainPane = loader.load();
 
         // 获得 main 类的控制器
@@ -120,7 +120,7 @@ public class Main extends Application {
         mainController.__init__();
 
         // 从 fxml 文件中加载 左面板 类
-        loader = new FXMLLoader(getClass().getResource("leftMusicList.fxml"));
+        loader = new FXMLLoader(getClass().getResource("LeftMusicList.fxml"));
         leftMusicList = loader.load();
 
         // 获得 左面板控制器
@@ -129,7 +129,7 @@ public class Main extends Application {
         leftMusicController.__init__();
 
         // 从 fxml 文件中加载 我的音乐界面 类
-        loader = new FXMLLoader(getClass().getResource("myMusicPage.fxml"));
+        loader = new FXMLLoader(getClass().getResource("MyMusicPage.fxml"));
         myMusicPage = loader.load();
 
         // 获得 我的音乐界面控制器
@@ -137,7 +137,7 @@ public class Main extends Application {
 
 
         // 从 fxml 文件中加载 播放列表界面 类
-        loader = new FXMLLoader(getClass().getResource("playList.fxml"));
+        loader = new FXMLLoader(getClass().getResource("PlayList.fxml"));
         playList = loader.load();
 
         // 获得 播放列表界面 控制器
@@ -146,7 +146,7 @@ public class Main extends Application {
         playListController.__init__();
 
         // 从 fxml 文件中加载 搜索界面 类
-        loader = new FXMLLoader(getClass().getResource("searchPage.fxml"));
+        loader = new FXMLLoader(getClass().getResource("SearchPage.fxml"));
         searchPage = loader.load();
 
         // 获得 搜索界面 控制器
@@ -186,15 +186,15 @@ public class Main extends Application {
 
         // 更换鼠标图标
 //        File file = new File("timg.gif");
-//        Image image = new Image(file.toURI().toString());
+//        image image = new image(file.toURI().toString());
 //        ImageCursor cursor = new ImageCursor(image, 20, 20);
 //        scene.setCursor(cursor);
 
         // 加载样式层叠表
         // todo：样式层叠表没有写好
-        scene.getStylesheets().add("css/main/main.css");
-        scene.getStylesheets().add("css/leftMusic/leftMusic.css");
-        scene.getStylesheets().add("css/myMusicPage/myMusicPage.css");
+        scene.getStylesheets().add("css/main/Main.css");
+        scene.getStylesheets().add("css/leftmusic/LeftMusic.css");
+        scene.getStylesheets().add("css/mymusicpage/MyMusicPage.css");
 
         // 删除主舞台的系统自带窗体
         primaryStage.initStyle(StageStyle.UNDECORATED);

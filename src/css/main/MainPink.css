@@ -34,7 +34,7 @@
 }
 
 #Label_page {
-    -fx-background-image: url("backgroundgoldblue.png");
+    -fx-background-image: url("BackgroundGoldBlue.png");
     -fx-background-size: 200px 50px;
 }
 
@@ -43,143 +43,143 @@
 }
 
 .buttonSearch {
-    -fx-background-image: url("Image/search.png");
+    -fx-background-image: url("image/Search.png");
     -fx-background-size: 30px;
 }
 
 .buttonSearch:hover {
-    -fx-background-image: url("Image/searchdark.png");
+    -fx-background-image: url("image/Searchdark.png");
     -fx-background-size: 30px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonMiniSize {
-    -fx-background-image: url("Image/miniSize.png");
+    -fx-background-image: url("image/MiniSize.png");
     -fx-background-size: 30px;
 }
 
 .buttonMiniSize:hover {
-    -fx-background-image: url("Image/miniSizeDark.png");
+    -fx-background-image: url("image/MiniSizeDark.png");
     -fx-background-size: 30px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonExit {
-    -fx-background-image: url("Image/exit.png");
+    -fx-background-image: url("image/Exit.png");
     -fx-background-size: 30px;
 }
 
 .buttonExit:hover {
-    -fx-background-image: url("Image/exitdark.png");
+    -fx-background-image: url("image/ExitDark.png");
     -fx-background-size: 30px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonPre {
-    -fx-background-image: url("Image/skipPre.png");
+    -fx-background-image: url("image/SkipPre.png");
     -fx-background-size: 50px;
 }
 
 .buttonPre:hover {
-    -fx-background-image: url("Image/skipPreDark.png");
+    -fx-background-image: url("image/SkipPreDark.png");
     -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonPlay {
-    -fx-background-image: url("Image/play.png");
+    -fx-background-image: url("image/Play.png");
     -fx-background-size: 50px;
 }
 
 .buttonPlay:hover {
-    -fx-background-image: url("Image/playDark.png");
+    -fx-background-image: url("image/PlayDark.png");
     -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonPause {
-    -fx-background-image: url("Image/pause.png");
+    -fx-background-image: url("image/Pause.png");
     -fx-background-size: 50px;
 }
 
 .buttonPause:hover {
-    -fx-background-image: url("Image/pauseDark.png");
+    -fx-background-image: url("image/PauseDark.png");
     -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonNext {
-    -fx-background-image: url("Image/skipNext.png");
+    -fx-background-image: url("image/SkipNext.png");
     -fx-background-size: 50px;
 }
 
 .buttonNext:hover {
-    -fx-background-image: url("Image/skipNextDark.png");
+    -fx-background-image: url("image/SkipNextDark.png");
     -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonMute {
-    -fx-background-image: url("Image/normalVoice.png");
+    -fx-background-image: url("image/NormalVoice.png");
     -fx-background-size: 25px;
 }
 
 .buttonMute:hover {
-    -fx-background-image: url("Image/normalVoiceDark.png");
+    -fx-background-image: url("image/NormalVoiceDark.png");
     -fx-background-size: 25px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .buttonCancelMute {
-    -fx-background-image: url("Image/mute.png");
+    -fx-background-image: url("image/Mute.png");
     -fx-background-size: 25px;
 }
 
 .buttonCancelMute:hover {
-    -fx-background-image: url("Image/muteDark.png");
+    -fx-background-image: url("image/MuteDark.png");
     -fx-background-size: 25px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .modeLoopPlay {
-    -fx-background-image: url("Image/repeat.png");
+    -fx-background-image: url("image/Repeat.png");
     -fx-background-size: 50px;
 }
 
 .modeLoopPlay:hover {
-    -fx-background-image: url("Image/repeatDark.png");
+    -fx-background-image: url("image/RepeatDark.png");
     -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .modeRandomPlay {
-    -fx-background-image: url("Image/shuffle.png");
+    -fx-background-image: url("image/Shuffle.png");
     -fx-background-size: 50px;
 }
 
 .modeRandomPlay:hover {
-    -fx-background-image: url("Image/shuffleDark.png");
+    -fx-background-image: url("image/ShuffleDark.png");
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .modeSingleCycle {
-    -fx-background-image: url("Image/repeatOne.png");
+    -fx-background-image: url("image/RepeatOne.png");
     -fx-background-size: 50px;
 }
 
 .modeSingleCycle:hover {
-    -fx-background-image: url("Image/repeatOneDark.png");
+    -fx-background-image: url("image/RepeatOneDark.png");
     -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }
 
 .playList {
-    -fx-background-image: url("Image/playList.png");
+    -fx-background-image: url("image/PlayList.png");
     -fx-background-size: 50px;
 }
 
 .playList:hover {
-    -fx-background-image: url("Image/playListDark.png");
+    -fx-background-image: url("image/PlayListDark.png");
     -fx-background-size: 50px;
     -fx-effect: DropShadow(three-pass-box, -fx-shadow-highlight-color, 15, 0.0, 0, 0);
 }

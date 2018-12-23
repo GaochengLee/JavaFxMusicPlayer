@@ -249,6 +249,7 @@ public class ClickAction implements EventHandler<MouseEvent> {
                     playListController.getTableView_songList().getItems().add(nextMusic);
 
                     playState.getCurrent_songList().add(nextMusic);
+
                 }
                 // 刷新播放列表
                 Handler.refreshPlayList();

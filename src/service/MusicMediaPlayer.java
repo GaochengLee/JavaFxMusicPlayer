@@ -74,10 +74,6 @@ public class MusicMediaPlayer {
      */
     private LeftMusicController leftMusicController = mainGUI.getLeftMusicController();
     /**
-     * 获取我的音乐界面的控制器
-     */
-    private MyMusicPageController musicPageController = mainGUI.getMyMusicPageController();
-    /**
      * 获取播放列表控制器
      */
     private PlayListController playListController = mainGUI.getPlayListController();
@@ -96,7 +92,7 @@ public class MusicMediaPlayer {
     /**
      * 获取我的音乐界面中的音乐列表
      */
-    private TableView<Music> musicList = musicPageController.getTableView_songList();
+    private TableView<Music> musicList = playListController.getTableView_songList();
     /**
      * 默认构造器
      */
@@ -128,10 +124,12 @@ public class MusicMediaPlayer {
 
             // 如果存在的话，把当前的播放位置设置为该歌曲所在的位置
             playState.setCurrentIndex(getBySongName(music.getMusicTitle()));
+
         } else {
 
             // 如果不存在，将新的位置赋给这个歌曲 
             playState.setCurrentIndex(playState.getCurrent_songList().size());
+
         }
 
     }

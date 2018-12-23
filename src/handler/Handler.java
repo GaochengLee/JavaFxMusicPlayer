@@ -148,16 +148,22 @@ public class Handler {
                     getMyMusicPageController().
                     getTableView_songList().
                     getSelectionModel().
-                    getSelectedItem()) != null)
-
-            // 生成 Excel 文件
-            ExcelTool.CreateMsg(music);
-            // 提示信息
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("通知");
-            alert.setHeaderText("^-^");
-            alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".xls");
-            alert.show();
+                    getSelectedItem()) != null) {
+                // 生成 Excel 文件
+                ExcelTool.CreateMsg(music);
+                // 提示信息
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("通知");
+                alert.setHeaderText("^-^");
+                alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".xls");
+                alert.show();
+            } else {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("通知");
+                alert.setHeaderText("^-^");
+                alert.setContentText("请选中文件");
+                alert.show();
+            }
         } catch (Exception e) {
             System.err.println("Error in export Excel");
         }
@@ -190,17 +196,22 @@ public class Handler {
                     getTableView_songList().
                     getSelectionModel().
                     getSelectedItem()) != null)
-            {}
-
-                DirectoryChooser chooser = new DirectoryChooser();
-            // 生成 PDF 文件
-            PDFTool.CreatePDF(music);
-            // 提示信息
-            Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("通知");
-            alert.setHeaderText("^-^");
-            alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".pdf");
-            alert.show();
+            {
+                // 生成 PDF 文件
+                PDFTool.CreatePDF(music);
+                // 提示信息
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("通知");
+                alert.setHeaderText("^-^");
+                alert.setContentText("输出文件已保存至 D:/" + music.getMusicTitle() + ".pdf");
+                alert.show();
+            } else {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("通知");
+                alert.setHeaderText("^-^");
+                alert.setContentText("请选中文件");
+                alert.show();
+            }
         } catch (Exception e) {
             System.err.println("Error in export PDF");
         }
@@ -344,9 +355,12 @@ public class Handler {
             // 获取扩展信息
             info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+            // 设置当前播放的音乐
             playState.setCurrentMusic(music);
             player = new MusicMediaPlayer(music);
+            // 设置当前播放位置为 0
             playState.setCurrentIndex(0);
+            // 开始播放
             player.start();
 
             // 刷新状态栏信息
@@ -361,9 +375,12 @@ public class Handler {
                 // 获取扩展信息
                 info = GetMusicInfo.getExtendedInfo(music.getPath());
 
+                // 设置当前播放的音乐
                 playState.setCurrentMusic(music);
                 player = new MusicMediaPlayer(music);
+                // 设置当前播放位置为 0
                 playState.setCurrentIndex(0);
+                // 开始播放
                 player.start();
 
                 // 刷新状态栏信息
@@ -378,8 +395,10 @@ public class Handler {
 
                 // 设置播放位置
                 playState.setCurrentIndex(index - 1);
+                // 设置当前播放音乐
                 playState.setCurrentMusic(music);
                 player = new MusicMediaPlayer(music);
+                // 开始播放
                 player.start();
 
                 // 刷新状态栏信息

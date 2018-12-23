@@ -7,68 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0050917-3fbe-4552-8810-685cff911af7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/css/main/BackgroundGoldBlue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/LeftMusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LeftMusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/PlayListController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/PlayListController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/ImportFile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/ImportFile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/ImportFileDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/ImportFileDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/ImportFolder.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/ImportFolder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/ImportFolderDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/ImportFolderDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/PDFFile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/PDFFile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/PDFFileDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/PDFFileDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/chat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/Chat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/chatDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/ChatDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/excelFile.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/ExcelFile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/excelFileDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/ExcelFileDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/game.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/Game.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/gameDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/GameDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/initial.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/Initial.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/leftMusic.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/LeftMusic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/leftMusicPink.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/LeftMusicPink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/music.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/Music.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leftMusic/musicDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leftmusic/MusicDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/exit.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Exit.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/exitdark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/ExitDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/miniSize.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/MiniSize.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/miniSizeDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/MiniSizeDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/mute.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Mute.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/muteDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/MuteDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/normalVoice.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/NormalVoice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/normalVoiceDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/NormalVoiceDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/pause.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Pause.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/pauseDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/PauseDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Play.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/playDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/PlayDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/playList.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/PlayList.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/playListDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/PlayListDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/repeat.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Repeat.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/repeatDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/RepeatDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/repeatOne.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/RepeatOne.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/repeatOneDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/RepeatOneDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/search.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Search.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/searchdark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Searchdark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/shuffle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/Shuffle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/shuffleDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/ShuffleDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/skipNext.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/SkipNext.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/skipNextDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/SkipNextDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/skipPre.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/SkipPre.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/Image/skipPreDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/image/SkipPreDark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/background.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/Background.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/backgroundgold.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/BackgroundGold.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/Main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main/mainPink.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/MainPink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/myMusicPage/myMusicPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mymusicpage/MyMusicPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/myMusicPage/myMusicPink.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/mymusicpage/MyMusicPink.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/chatRoom.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/ChatRoom.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/leftMusicList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/LeftMusicList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/myMusicPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/MyMusicPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/playList.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/PlayList.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainGUI/searchPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainGUI/SearchPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tool/GetMusicInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tool/GetMusicInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handler/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/handler/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/Server.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,14 +23,14 @@
     <session id="-1492374840">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -101,12 +43,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="26" />
+          <entry key="CSS" value="36" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="5" />
-          <entry key="JAVA" value="136" />
+          <entry key="JAVA" value="139" />
           <entry key="Markdown" value="2" />
-          <entry key="XML" value="15" />
+          <entry key="XML" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -121,9 +63,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1686" />
-          <entry key="JAVA" value="9673" />
+          <entry key="JAVA" value="9795" />
           <entry key="Markdown" value="22" />
-          <entry key="PLAIN_TEXT" value="293" />
+          <entry key="PLAIN_TEXT" value="300" />
           <entry key="XML" value="86" />
         </counts>
       </usages-collector>
@@ -132,27 +74,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
+        <entry file="file://$PROJECT_DIR$/src/net/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-              <folding>
-                <element signature="e#21530#21531#0" expanded="true" />
-                <element signature="e#21559#21560#0" expanded="true" />
-                <element signature="e#21675#21676#0" expanded="true" />
-                <element signature="e#21711#21712#0" expanded="true" />
-                <element signature="e#21826#21827#0" expanded="true" />
-                <element signature="e#21856#21857#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tool/ExcelTool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+            <state relative-caret-position="119">
+              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
             </state>
           </provider>
         </entry>
@@ -239,11 +164,11 @@
         <option value="$PROJECT_DIR$/src/css/playListPage.css" />
         <option value="$PROJECT_DIR$/src/controller/LeftMusicController.java" />
         <option value="$PROJECT_DIR$/src/controller/MyMusicPageController.java" />
-        <option value="$PROJECT_DIR$/src/net/Server.java" />
         <option value="$PROJECT_DIR$/src/handler/ClickAction.java" />
         <option value="$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java" />
         <option value="$PROJECT_DIR$/src/mainGUI/Main.java" />
         <option value="$PROJECT_DIR$/src/handler/Handler.java" />
+        <option value="$PROJECT_DIR$/src/net/Server.java" />
       </list>
     </option>
   </component>
@@ -254,8 +179,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="218" />
-    <option name="y" value="76" />
+    <option name="x" value="77" />
+    <option name="y" value="97" />
     <option name="width" value="1536" />
     <option name="height" value="862" />
   </component>
@@ -264,7 +189,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,17 +201,24 @@
               <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="JavaFxMusicPlayer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaFxMusicPlayer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545523838382" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545530716619" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Compressed/MyTetris" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -295,7 +226,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="copyright" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -367,7 +298,8 @@
       <workItem from="1545403218748" duration="10964000" />
       <workItem from="1545442824341" duration="1293000" />
       <workItem from="1545451068151" duration="3571000" />
-      <workItem from="1545455279012" duration="30643000" />
+      <workItem from="1545455279012" duration="35252000" />
+      <workItem from="1545530761014" duration="1967000" />
     </task>
     <task id="LOCAL-00001" summary="改变路径">
       <created>1545368422973</created>
@@ -488,16 +420,24 @@
       <option name="project" value="LOCAL" />
       <updated>1545492267459</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="修改文件名">
+      <created>1545524028067</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1545524028067</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57514000" />
+    <option name="totallyTimeSpent" value="64090000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="218" y="76" width="1536" height="862" extended-state="0" />
+    <frame x="388" y="91" width="1536" height="862" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.1605691" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" weight="0.16260162" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16897655" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -585,86 +525,19 @@
     <MESSAGE value="新添图片" />
     <MESSAGE value="添加注释 删除一些东西 css不想写了" />
     <MESSAGE value="添加注释 删除一些东西" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加注释 删除一些东西" />
+    <MESSAGE value="修改文件名" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改文件名" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/Compressed/MyTetris/src/com/fry/tetris/Z.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/MyTetris/src/com/fry/tetris/Tetromino.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
-          <folding>
-            <element signature="e#897#898#0" expanded="true" />
-            <element signature="e#925#926#0" expanded="true" />
-            <element signature="e#2597#2598#0" expanded="true" />
-            <element signature="e#2642#2643#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/game/tetris/Tetris.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2753#4355#0" expanded="true" />
-            <element signature="e#4354#4355#0" expanded="true" />
-            <element signature="e#11882#12016#0" expanded="true" />
-            <element signature="e#12015#12016#0" expanded="true" />
-            <element signature="e#12454#12588#0" expanded="true" />
-            <element signature="e#12587#12588#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/MyTetris/src/com/fry/tetris/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/Compressed/MyTetris/src/com/fry/tetris/Tetris.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="87" column="50" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ChatRoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ChatRoom/src/ChatClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="152" column="18" selection-start-line="152" selection-start-column="18" selection-end-line="152" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ChatRoom/src/ChatServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/game/tetris/Tetris.java" />
+    <entry file="file://$PROJECT_DIR$/src/controller/ChatRoomController.java" />
     <entry file="file://$PROJECT_DIR$/src/mainGUI/ChatRoom.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/com/fry/tetris/Tetromino.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -697,18 +570,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/main/Main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainGUI/MyMusicPage.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255" />
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../MusicPlayer-master/src/com/example/css/local/LocalMusicPageCss.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -721,60 +587,21 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mainGUI/PlayList.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="44" column="159" selection-start-line="44" selection-start-column="159" selection-end-line="44" selection-end-column="159" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/searchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/searchPagePink.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/searchPage.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/searchPage.java" />
     <entry file="file://$PROJECT_DIR$/src/mainGUI/LeftMusicList.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
           <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/mymusicpage/MyMusicPink.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/leftmusic/LeftMusicPink.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/playListPage.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/main/MainPink.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2110">
-          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/playListPagePink.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/SearchPageController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -814,13 +641,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/mymusicpage/MyMusicPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -905,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/Server.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4828">
-          <caret line="294" column="23" selection-start-line="294" selection-start-column="23" selection-end-line="294" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainGUI/ChatRoomGUI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2310">
@@ -919,23 +732,6 @@
           <folding>
             <element signature="e#0#3319#0" expanded="true" />
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/handler/ClickAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4983">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#11938#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#11272#11273#0" expanded="true" />
-            <element signature="e#11314#11315#0" expanded="true" />
-            <element signature="e#11449#11450#0" expanded="true" />
-            <element signature="e#11491#11492#0" expanded="true" />
-            <element signature="e#11628#11629#0" expanded="true" />
-            <element signature="e#11672#11673#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -950,32 +746,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/leftmusic/LeftMusic.css">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1093">
-          <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
-        </state>
+        <state relative-caret-position="-340" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tool/ExcelTool.java">
+    <entry file="file://$PROJECT_DIR$/src/handler/ClickAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="187">
+          <caret line="253" column="24" selection-start-line="253" selection-start-column="24" selection-end-line="253" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#11938#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/handler/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="545">
+          <caret line="687" column="15" lean-forward="true" selection-start-line="687" selection-start-column="15" selection-end-line="687" selection-end-column="15" />
           <folding>
-            <element signature="e#21530#21531#0" expanded="true" />
-            <element signature="e#21559#21560#0" expanded="true" />
-            <element signature="e#21675#21676#0" expanded="true" />
-            <element signature="e#21711#21712#0" expanded="true" />
-            <element signature="e#21826#21827#0" expanded="true" />
-            <element signature="e#21856#21857#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#21810#21811#0" expanded="true" />
+            <element signature="e#21839#21840#0" expanded="true" />
+            <element signature="e#21955#21956#0" expanded="true" />
+            <element signature="e#21991#21992#0" expanded="true" />
+            <element signature="e#22106#22107#0" expanded="true" />
+            <element signature="e#22136#22137#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tool/ExcelTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/searchPagePink.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/searchPage.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/playListPagePink.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/playListPage.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/main/Main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2382">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/main/MainPink.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2110">
+          <caret line="36" column="56" lean-forward="true" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/leftmusic/LeftMusicPink.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-563">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/leftmusic/LeftMusic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" column="30" selection-start-line="115" selection-start-column="30" selection-end-line="115" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/mymusicpage/MyMusicPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/mymusicpage/MyMusicPink.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>

@@ -71,7 +71,7 @@ public class Server extends Thread {
      *
      * @param clientSocket 客户端套接字
      */
-    public Server(Socket clientSocket) {
+    private Server(Socket clientSocket) {
         // 初始化客户端套接字
         this.clientSocket = clientSocket;
 
